@@ -1,0 +1,15 @@
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\bin\Debug\net6.0\Budget-Buddy-logic.exe
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\bin\Debug\net6.0\Budget-Buddy-logic.deps.json
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\bin\Debug\net6.0\Budget-Buddy-logic.runtimeconfig.json
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\bin\Debug\net6.0\Budget-Buddy-logic.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\bin\Debug\net6.0\Budget-Buddy-logic.pdb
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.AssemblyInfoInputs.cache
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.AssemblyInfo.cs
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.csproj.CoreCompileInputs.cache
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.sourcelink.json
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\refint\Budget-Buddy-logic.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.pdb
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\Budget-Buddy-logic.genruntimeconfig.cache
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\Budget-Buddy-logic\obj\Debug\net6.0\ref\Budget-Buddy-logic.dll
