@@ -29,9 +29,15 @@ namespace Budget_Buddy_logic
             set { _amount = value; }
         }
 
+
+        public void Greeting()
+        {
+            Console.WriteLine($"Witaj {_name}!");
+        }   
+
         public void Display()
         {
-            Console.WriteLine($"Witaj {_name}! Twój aktualny budżet wynosi {_amount} zł.");
+            Console.WriteLine($"Twój aktualny budżet wynosi {_amount.ToString("0.00")} zł.");
         }   
     }
 }
