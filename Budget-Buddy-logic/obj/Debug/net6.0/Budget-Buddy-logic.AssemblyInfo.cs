@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Budget-Buddy-logic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55c50e30cd5aad47d399abf47b2184eab3a19281")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d82e9b3f7916116bc2f756fb193a43946523c9ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Budget-Buddy-logic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Budget-Buddy-logic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

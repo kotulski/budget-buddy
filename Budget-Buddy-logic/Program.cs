@@ -40,7 +40,7 @@
             Console.WriteLine("1. Wyświetl aktualny budżet.");
             Console.WriteLine("2. Dodaj wydatek.");
             Console.WriteLine("3. Dodaj przychód.");
-            Console.WriteLine("4. Zarządzaj budżetem.");
+            Console.WriteLine("4. Zarządzaj limitami.");
             Console.WriteLine("5. Wygeneruj raport.");
             Console.WriteLine("6. Zakończ program.\n");
             string choice = Console.ReadLine();
@@ -56,9 +56,9 @@
                 case "3":
                     budget.AddIncome();
                     break;
-                //case "4":
-                //    budget.ManageBudget();
-                //    break;
+                case "4":
+                    budget.ManageBudget();
+                    break;
                 case "5":
                     budget.GenerateReport();
                     break;

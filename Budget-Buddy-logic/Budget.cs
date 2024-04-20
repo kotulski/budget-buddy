@@ -12,11 +12,19 @@ namespace Budget_Buddy_logic
 
         private string _name;
         private float _budget;
+        private float _dayLimit;
+        private float _weekLimit;
+        private float _monthLimit;
+        private float _yearLimit;
 
         public Budget(string name, float amount)
         {
             _name = name;
             _budget = amount;
+            _dayLimit = 0;
+            _weekLimit = 0;
+            _monthLimit = 0;
+            _yearLimit = 0;
         }
 
         public string Name
@@ -289,54 +297,59 @@ namespace Budget_Buddy_logic
             }
         }
 
-        //public void ManageBudget()
-        //{
-        //    Console.WriteLine("Co chciałbyś zrobić? (Zmień nazwę, Zmień kwotę, Usuń budżet): ");
-        //    string choice = Console.ReadLine().ToLower();
-        //    Console.WriteLine();
+        public void ManageBudget()
+        {
+            Console.WriteLine("Co chciałbyś zrobić? (Ustaw limit, Zmień limit, Usuń limit): ");
+            string choice = Console.ReadLine().ToLower();
+            Console.WriteLine();
 
-        //    switch (choice)
-        //    {
-        //        case "zmień nazwę":
-        //            Console.Write("Podaj nową nazwę: ");
-        //            _name = Console.ReadLine();
-        //            Console.WriteLine("Nazwa została zmieniona.");
-        //            break;
-        //        case "zmień kwotę":
-        //            Console.Write("Podaj nową kwotę: ");
-        //            try
-        //            {
-        //                _budget = float.Parse(Console.ReadLine());
-        //                Console.WriteLine("Kwota została zmieniona.");
-        //            }
-        //            catch (FormatException)
-        //            {
-        //                Console.WriteLine("Niepoprawny format kwoty. Spróbuj ponownie.");
-        //                ManageBudget();
-        //            }
-        //            break;
-        //        case "usuń budżet":
-        //            Console.WriteLine("Czy na pewno chcesz usunąć budżet? (Tak/Nie): ");
-        //            string answer = Console.ReadLine().ToLower();
-        //            if (answer == "tak")
-        //            {
-        //                _budget = 0;
-        //                Console.WriteLine("Budżet został usunięty.");
-        //            }
-        //            else if (answer == "nie")
-        //            {
-        //                Console.WriteLine("Budżet nie został usunięty.");
-        //            }
-        //            else
-        //            {
-        //                Console.WriteLine("Niepoprawna odpowiedź. Spróbuj ponownie.");
-        //                ManageBudget();
-        //            }
-        //            break;
-        //        default:
-        //            Console.WriteLine("Niepoprawny wybór. Spróbuj ponownie.");
-        //            break;
-        //    }
-        //}
+            switch (choice)
+            {
+                case "ustaw limit":
+                    SetLimit();
+                    break;
+                case "zmień limit":
+                    //ChangeLimit();
+                    break;
+                case "usuń limit":
+                    //DeleteLimit();
+                    break;
+                default:
+                    Console.WriteLine("Niepoprawny wybór. Spróbuj ponownie.");
+                    break;
+            }
+        }
+
+        public void SetLimit()
+        {
+            Console.WriteLine("Na jaki okres czasowy chcesz ustawić limit? (Dzień, Tydzień, Miesiąc, Rok): ");
+            string period = Console.ReadLine().ToLower();
+            Console.WriteLine();
+            switch (period)
+            {
+                   case "dzień":
+                    Console.Write("Podaj kwotę limitu na dzień: ");
+                    _dayLimit = float.Parse(Console.ReadLine());
+                    break;
+                case "tydzień":
+                    Console.Write("Podaj kwotę limitu na tydzień: ");
+                    _weekLimit = float.Parse(Console.ReadLine());
+                    break;
+                case "miesiąc":
+                    Console.Write("Podaj kwotę limitu na miesiąc: ");
+                    _monthLimit = float.Parse(Console.ReadLine());
+                    break;
+                case "rok":
+                    Console.Write("Podaj kwotę limitu na rok: ");
+                    _yearLimit = float.Parse(Console.ReadLine());
+                    break;
+                default:
+                    Console.WriteLine("Niepoprawny okres czasowy. Spróbuj ponownie.");
+                    SetLimit();
+                    break;
+            }
+        }
+
+
     }
 }
