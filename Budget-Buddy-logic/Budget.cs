@@ -185,21 +185,18 @@ namespace Budget_Buddy_logic
 
         public void GenerateReport()
         {
-            Console.WriteLine("Co chciałbyś wygenerować raport? (Przychód, Wydatki, Oba): ");
+            Console.WriteLine("Co chciałbyś wygenerować raport? (Przychody, Wydatki, Oba): ");
             string reportType = Console.ReadLine().ToLower();
             Console.WriteLine();
 
             string period = null;
-            if (reportType != "przychód")
-            {
                 Console.Write("Jaki okres czasowy ma obejmować raport? (Dzień, Tydzień, Miesiąc, Kwartał, Pół Roku, Rok, Bez ograniczeń): ");
                 period = periodCheck();
                 Console.WriteLine();
-            }
 
             switch (reportType)
             {
-                case "przychód":
+                case "przychody":
                     GenerateIncomeReport(period);
                     break;
                 case "wydatki":
