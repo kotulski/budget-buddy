@@ -77,6 +77,8 @@ namespace Budget_Buddy_logic
                         Console.WriteLine($"Dodano wydatek: {expense};\nKategoria: {category};\nNotatka: {note}.");
                         Transaction transaction = new Transaction("Wydatek", DateTime.Now.ToString("dd/MM/yyyy"), category, expense, note);
                         transactions.Add(transaction);
+
+                        CheckExpenseLimits(expense);
                     }
                     else
                     {
@@ -90,6 +92,64 @@ namespace Budget_Buddy_logic
                 Console.WriteLine("Niepoprawny format kwoty. Spróbuj ponownie.");
                 AddExpense();
             }
+        }
+
+        private void CheckExpenseLimits(float expense)
+        {
+            if (_dayLimit > 0 && GetTotalExpensesForPeriod("dzień") > _dayLimit)
+            {
+                Console.WriteLine($"Przekroczono limit dzienny ({_dayLimit} zł)!");
+            }
+            if (_weekLimit > 0 && GetTotalExpensesForPeriod("tydzień") > _weekLimit)
+            {
+                Console.WriteLine($"Przekroczono limit tygodniowy ({_weekLimit} zł)!");
+            }
+            if (_monthLimit > 0 && GetTotalExpensesForPeriod("miesiąc") > _monthLimit)
+            {
+                Console.WriteLine($"Przekroczono limit miesięczny ({_monthLimit} zł)!");
+            }
+            if (_yearLimit > 0 && GetTotalExpensesForPeriod("rok") > _yearLimit)
+            {
+                Console.WriteLine($"Przekroczono limit roczny ({_yearLimit} zł)!");
+            }
+        }
+
+        private float GetTotalExpensesForPeriod(string period)
+        {
+            DateTime startDate = DateTime.Now;
+            DateTime endDate = DateTime.Now;
+
+            switch (period)
+            {
+                case "dzień":
+                    startDate = DateTime.Today;
+                    endDate = startDate.AddDays(1).AddSeconds(-1);
+                    break;
+                case "tydzień":
+                    startDate = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
+                    endDate = startDate.AddDays(7).AddSeconds(-1);
+                    break;
+                case "miesiąc":
+                    startDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+                    endDate = startDate.AddMonths(1).AddSeconds(-1);
+                    break;
+                case "rok":
+                    startDate = new DateTime(DateTime.Today.Year, 1, 1);
+                    endDate = startDate.AddYears(1).AddSeconds(-1);
+                    break;
+            }
+
+            float totalExpenses = 0;
+
+            foreach (Transaction transaction in transactions)
+            {
+                if (transaction.Type == "Wydatek" && DateTime.ParseExact(transaction.Date, "dd/MM/yyyy", null) >= startDate && DateTime.ParseExact(transaction.Date, "dd/MM/yyyy", null) <= endDate)
+                {
+                    totalExpenses += transaction.Amount;
+                }
+            }
+
+            return totalExpenses;
         }
 
         public void AddIncome()
@@ -187,6 +247,10 @@ namespace Budget_Buddy_logic
                     startDate = new DateTime(DateTime.Today.Year, 1, 1);
                     endDate = startDate.AddYears(1).AddSeconds(-1);
                     break;
+                case "bez ograniczeń":
+                    startDate = DateTime.MinValue;
+                    endDate = DateTime.MaxValue;
+                    break;
             }
 
             float totalExpenses = 0;
@@ -237,6 +301,10 @@ namespace Budget_Buddy_logic
                 case "rok":
                     startDate = new DateTime(DateTime.Today.Year, 1, 1);
                     endDate = startDate.AddYears(1).AddSeconds(-1);
+                    break;
+                case "bez ograniczeń":
+                    startDate = DateTime.MinValue;
+                    endDate = DateTime.MaxValue;
                     break;
             }
 
@@ -309,10 +377,10 @@ namespace Budget_Buddy_logic
                     SetLimit();
                     break;
                 case "zmień limit":
-                    //ChangeLimit();
+                    ChangeLimit();
                     break;
                 case "usuń limit":
-                    //DeleteLimit();
+                    DeleteLimit();
                     break;
                 default:
                     Console.WriteLine("Niepoprawny wybór. Spróbuj ponownie.");
@@ -327,7 +395,7 @@ namespace Budget_Buddy_logic
             Console.WriteLine();
             switch (period)
             {
-                   case "dzień":
+                case "dzień":
                     Console.Write("Podaj kwotę limitu na dzień: ");
                     _dayLimit = float.Parse(Console.ReadLine());
                     break;
@@ -350,6 +418,70 @@ namespace Budget_Buddy_logic
             }
         }
 
+        public void ChangeLimit()
+        {
+            Console.WriteLine("Który limit chciałbyś zmienić? (Dzień, Tydzień, Miesiąc, Rok): ");
+            string period = Console.ReadLine().ToLower();
+            Console.WriteLine();
 
+            switch (period)
+            {
+                case "dzień":
+                    Console.Write("Podaj nową kwotę limitu na dzień: ");
+                    _dayLimit = float.Parse(Console.ReadLine());
+                    Console.WriteLine("Limit dzienny został zmieniony.");
+                    break;
+                case "tydzień":
+                    Console.Write("Podaj nową kwotę limitu na tydzień: ");
+                    _weekLimit = float.Parse(Console.ReadLine());
+                    Console.WriteLine("Limit tygodniowy został zmieniony.");
+                    break;
+                case "miesiąc":
+                    Console.Write("Podaj nową kwotę limitu na miesiąc: ");
+                    _monthLimit = float.Parse(Console.ReadLine());
+                    Console.WriteLine("Limit miesięczny został zmieniony.");
+                    break;
+                case "rok":
+                    Console.Write("Podaj nową kwotę limitu na rok: ");
+                    _yearLimit = float.Parse(Console.ReadLine());
+                    Console.WriteLine("Limit roczny został zmieniony.");
+                    break;
+                default:
+                    Console.WriteLine("Niepoprawny okres czasowy. Spróbuj ponownie.");
+                    ChangeLimit();
+                    break;
+            }
+        }
+
+        public void DeleteLimit()
+        {
+            Console.WriteLine("Który limit chciałbyś usunąć? (Dzień, Tydzień, Miesiąc, Rok): ");
+            string period = Console.ReadLine().ToLower();
+            Console.WriteLine();
+
+            switch (period)
+            {
+                case "dzień":
+                    _dayLimit = 0;
+                    Console.WriteLine("Limit dzienny został usunięty.");
+                    break;
+                case "tydzień":
+                    _weekLimit = 0;
+                    Console.WriteLine("Limit tygodniowy został usunięty.");
+                    break;
+                case "miesiąc":
+                    _monthLimit = 0;
+                    Console.WriteLine("Limit miesięczny został usunięty.");
+                    break;
+                case "rok":
+                    _yearLimit = 0;
+                    Console.WriteLine("Limit roczny został usunięty.");
+                    break;
+                default:
+                    Console.WriteLine("Niepoprawny okres czasowy. Spróbuj ponownie.");
+                    DeleteLimit();
+                    break;
+            }
+        }
     }
 }
