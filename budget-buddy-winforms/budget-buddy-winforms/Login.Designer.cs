@@ -79,9 +79,8 @@
             textBox1.ForeColor = SystemColors.GrayText;
             textBox1.Location = new Point(309, 140);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(175, 25);
+            textBox1.Size = new Size(201, 25);
             textBox1.TabIndex = 4;
-            textBox1.Text = "Wpisz swoje imię";
             textBox1.TextAlign = HorizontalAlignment.Center;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -91,9 +90,8 @@
             textBox2.ForeColor = SystemColors.GrayText;
             textBox2.Location = new Point(309, 250);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(175, 25);
+            textBox2.Size = new Size(201, 25);
             textBox2.TabIndex = 5;
-            textBox2.Text = "np. 90,00";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // label1
@@ -106,6 +104,7 @@
             label1.Size = new Size(127, 20);
             label1.TabIndex = 1;
             label1.Text = "Podaj swoje dane";
+            label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // Login
             // 

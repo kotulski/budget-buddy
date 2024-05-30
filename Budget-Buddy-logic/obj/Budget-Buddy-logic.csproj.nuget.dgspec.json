@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj": {}
+    "C:\\Users\\filip\\Desktop\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj": {
+    "C:\\Users\\filip\\Desktop\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\Desktop\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj",
         "projectName": "Budget-Buddy-logic",
-        "projectPath": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj",
+        "projectPath": "C:\\Users\\filip\\Desktop\\budget-buddy\\Budget-Buddy-logic\\Budget-Buddy-logic.csproj",
         "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy-logic\\obj\\",
+        "outputPath": "C:\\Users\\filip\\Desktop\\budget-buddy\\Budget-Buddy-logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -60,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
