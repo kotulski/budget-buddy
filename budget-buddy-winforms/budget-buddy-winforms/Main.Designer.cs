@@ -49,7 +49,6 @@
             label1.Size = new Size(57, 25);
             label1.TabIndex = 2;
             label1.Text = "Witaj";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -61,7 +60,6 @@
             label2.Size = new Size(256, 25);
             label2.TabIndex = 3;
             label2.Text = "Twój aktualny budżet wynosi:";
-            label2.Click += label2_Click;
             // 
             // label4
             // 
@@ -84,7 +82,6 @@
             label3.Size = new Size(55, 25);
             label3.TabIndex = 6;
             label3.Text = "imię!";
-            label3.Click += label3_Click;
             // 
             // button1
             // 
@@ -99,6 +96,7 @@
             button1.TabIndex = 7;
             button1.Text = "Dodaj wydatek";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -113,6 +111,7 @@
             button2.TabIndex = 8;
             button2.Text = "Dodaj przychód";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -127,6 +126,7 @@
             button3.TabIndex = 9;
             button3.Text = "Zarządzaj limitami";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -141,6 +141,7 @@
             button4.TabIndex = 10;
             button4.Text = "Wygeneruj raport";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -155,6 +156,7 @@
             button5.TabIndex = 11;
             button5.Text = "Zakończ program";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Main
             // 
