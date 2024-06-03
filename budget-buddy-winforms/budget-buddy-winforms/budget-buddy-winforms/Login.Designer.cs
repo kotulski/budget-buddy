@@ -38,7 +38,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.DeepSkyBlue;
+            button1.BackColor = Color.Blue;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 10F);
@@ -57,7 +57,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label2.ForeColor = SystemColors.InfoText;
-            label2.Location = new Point(309, 118);
+            label2.Location = new Point(297, 118);
             label2.Name = "label2";
             label2.Size = new Size(39, 19);
             label2.TabIndex = 2;
@@ -68,7 +68,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label3.ForeColor = SystemColors.InfoText;
-            label3.Location = new Point(309, 228);
+            label3.Location = new Point(297, 228);
             label3.Name = "label3";
             label3.Size = new Size(201, 19);
             label3.TabIndex = 3;
@@ -78,11 +78,10 @@
             // 
             textBox1.Font = new Font("Segoe UI", 10F);
             textBox1.ForeColor = SystemColors.GrayText;
-            textBox1.Location = new Point(309, 140);
+            textBox1.Location = new Point(297, 140);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(175, 25);
+            textBox1.Size = new Size(201, 25);
             textBox1.TabIndex = 4;
-            textBox1.Text = "Wpisz swoje imię";
             textBox1.TextAlign = HorizontalAlignment.Center;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -90,11 +89,10 @@
             // 
             textBox2.Font = new Font("Segoe UI", 10F);
             textBox2.ForeColor = SystemColors.GrayText;
-            textBox2.Location = new Point(309, 250);
+            textBox2.Location = new Point(297, 250);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(175, 25);
+            textBox2.Size = new Size(201, 25);
             textBox2.TabIndex = 5;
-            textBox2.Text = "np. 90,00";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // label1
@@ -102,7 +100,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = SystemColors.InfoText;
-            label1.Location = new Point(336, 50);
+            label1.Location = new Point(340, 50);
             label1.Name = "label1";
             label1.Size = new Size(127, 20);
             label1.TabIndex = 1;

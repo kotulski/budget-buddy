@@ -35,8 +35,8 @@
             label1 = new Label();
             Wybierz2 = new ListBox();
             label4 = new Label();
-            button2 = new Button();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label2
@@ -120,35 +120,37 @@
             label4.TabIndex = 17;
             label4.Text = "Kwota:";
             // 
-            // button2
-            // 
-            button2.BackColor = Color.DeepSkyBlue;
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe UI", 10F);
-            button2.ForeColor = SystemColors.Info;
-            button2.Location = new Point(240, 330);
-            button2.Margin = new Padding(0);
-            button2.Name = "button2";
-            button2.Size = new Size(150, 40);
-            button2.TabIndex = 19;
-            button2.Text = "Gotowe";
-            button2.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
-            button1.BackColor = Color.OrangeRed;
+            button1.BackColor = Color.Blue;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 10F);
             button1.ForeColor = SystemColors.Info;
-            button1.Location = new Point(410, 330);
+            button1.Location = new Point(240, 330);
             button1.Margin = new Padding(0);
             button1.Name = "button1";
             button1.Size = new Size(150, 40);
-            button1.TabIndex = 20;
-            button1.Text = "Anuluj";
+            button1.TabIndex = 19;
+            button1.Text = "Gotowe";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button2_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.DodgerBlue;
+            button2.BackgroundImageLayout = ImageLayout.None;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI", 10F);
+            button2.ForeColor = SystemColors.Info;
+            button2.Location = new Point(410, 330);
+            button2.Margin = new Padding(0);
+            button2.Name = "button2";
+            button2.Size = new Size(150, 40);
+            button2.TabIndex = 20;
+            button2.Text = "Anuluj";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button1_Click;
             // 
             // Limity
             // 
@@ -156,8 +158,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
             Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(Wybierz2);
             Controls.Add(label4);
             Controls.Add(Wybierz1);
@@ -167,6 +169,7 @@
             Controls.Add(label2);
             Name = "Limity";
             Text = "Limity";
+            Load += Limity_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -179,7 +182,7 @@
         private Label label1;
         private ListBox Wybierz2;
         private Label label4;
-        private Button button2;
         private Button button1;
+        private Button button2;
     }
 }

@@ -88,7 +88,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.DeepSkyBlue;
+            button1.BackColor = Color.Blue;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 10F);
@@ -99,10 +99,11 @@
             button1.TabIndex = 7;
             button1.Text = "Dodaj wydatek";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.BackColor = Color.DeepSkyBlue;
+            button2.BackColor = Color.Blue;
             button2.BackgroundImageLayout = ImageLayout.None;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 10F);
@@ -113,10 +114,11 @@
             button2.TabIndex = 8;
             button2.Text = "Dodaj przychód";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.BackColor = Color.DeepSkyBlue;
+            button3.BackColor = Color.Blue;
             button3.BackgroundImageLayout = ImageLayout.None;
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 10F);
@@ -127,10 +129,11 @@
             button3.TabIndex = 9;
             button3.Text = "Zarządzaj limitami";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.BackColor = Color.DeepSkyBlue;
+            button4.BackColor = Color.Blue;
             button4.BackgroundImageLayout = ImageLayout.None;
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Segoe UI", 10F);
@@ -141,10 +144,11 @@
             button4.TabIndex = 10;
             button4.Text = "Wygeneruj raport";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
-            button5.BackColor = Color.OrangeRed;
+            button5.BackColor = Color.DodgerBlue;
             button5.BackgroundImageLayout = ImageLayout.None;
             button5.FlatStyle = FlatStyle.Popup;
             button5.Font = new Font("Segoe UI", 10F);
@@ -155,6 +159,7 @@
             button5.TabIndex = 11;
             button5.Text = "Zakończ program";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Main
             // 

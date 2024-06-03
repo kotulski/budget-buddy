@@ -67,7 +67,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.OrangeRed;
+            button1.BackColor = Color.DodgerBlue;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 10F);
@@ -79,6 +79,7 @@
             button1.TabIndex = 7;
             button1.Text = "Zakończ";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Wybierz
             // 

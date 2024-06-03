@@ -12,9 +12,21 @@ namespace budget_buddy_winforms
 {
     public partial class Raport : Form
     {
-        public Raport()
+        private float userBudget;
+        private string userName;
+
+        public Raport(string name, float budget)
         {
             InitializeComponent();
+            userName = name;
+            userBudget = budget;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Main main = new Main(userName, userBudget);
+            main.Show();
+            this.Hide();
         }
     }
 }

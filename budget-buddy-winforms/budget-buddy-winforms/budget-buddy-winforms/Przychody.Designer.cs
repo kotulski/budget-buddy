@@ -91,7 +91,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.DeepSkyBlue;
+            button1.BackColor = Color.Blue;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 10F);
@@ -103,10 +103,11 @@
             button1.TabIndex = 14;
             button1.Text = "Gotowe";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.BackColor = Color.OrangeRed;
+            button2.BackColor = Color.DodgerBlue;
             button2.BackgroundImageLayout = ImageLayout.None;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 10F);
@@ -118,6 +119,7 @@
             button2.TabIndex = 15;
             button2.Text = "Anuluj";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Przychody
             // 
