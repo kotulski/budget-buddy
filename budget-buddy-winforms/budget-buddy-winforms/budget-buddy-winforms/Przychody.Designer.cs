@@ -56,8 +56,8 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(175, 25);
             textBox1.TabIndex = 11;
-            textBox1.Text = "np. 90,00";
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 

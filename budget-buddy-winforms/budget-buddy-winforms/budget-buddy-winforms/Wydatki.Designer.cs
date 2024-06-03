@@ -108,8 +108,8 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(175, 25);
             textBox1.TabIndex = 9;
-            textBox1.Text = "np. 90,00";
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox3
             // 
@@ -125,11 +125,13 @@
             Wybierz.ForeColor = SystemColors.GrayText;
             Wybierz.FormattingEnabled = true;
             Wybierz.ItemHeight = 17;
+            Wybierz.Items.AddRange(new object[] { "Inne", "Żywność", "Mieszkania", "Transport", "Rozrywka", "Opieka Medyczna", "Chemia", "Edukacja" });
             Wybierz.Location = new Point(360, 192);
             Wybierz.Margin = new Padding(0);
             Wybierz.Name = "Wybierz";
             Wybierz.Size = new Size(175, 21);
             Wybierz.TabIndex = 12;
+            Wybierz.SelectedIndexChanged += Wybierz_SelectedIndexChanged;
             // 
             // button2
             // 
