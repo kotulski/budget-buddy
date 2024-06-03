@@ -46,5 +46,10 @@ namespace budget_buddy_winforms
             main.Show();
             this.Hide();
         }
+
+        private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

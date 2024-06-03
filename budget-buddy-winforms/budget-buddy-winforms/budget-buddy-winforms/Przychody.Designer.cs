@@ -31,8 +31,6 @@
             label2 = new Label();
             textBox1 = new TextBox();
             label1 = new Label();
-            textBox3 = new TextBox();
-            label4 = new Label();
             button1 = new Button();
             button2 = new Button();
             SuspendLayout();
@@ -52,7 +50,7 @@
             // 
             textBox1.Font = new Font("Segoe UI", 10F);
             textBox1.ForeColor = SystemColors.GrayText;
-            textBox1.Location = new Point(360, 165);
+            textBox1.Location = new Point(360, 186);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(175, 25);
             textBox1.TabIndex = 11;
@@ -64,30 +62,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = SystemColors.InfoText;
-            label1.Location = new Point(265, 165);
+            label1.Location = new Point(265, 186);
             label1.Name = "label1";
             label1.Size = new Size(93, 19);
             label1.TabIndex = 10;
             label1.Text = "Kwota (0,00):";
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI", 10F);
-            textBox3.Location = new Point(360, 226);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(175, 25);
-            textBox3.TabIndex = 13;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label4.ForeColor = SystemColors.InfoText;
-            label4.Location = new Point(265, 228);
-            label4.Name = "label4";
-            label4.Size = new Size(62, 19);
-            label4.TabIndex = 12;
-            label4.Text = "Notatka:";
             // 
             // button1
             // 
@@ -129,8 +108,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(label4);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(label2);
@@ -145,8 +122,6 @@
         private Label label2;
         private TextBox textBox1;
         private Label label1;
-        private TextBox textBox3;
-        private Label label4;
         private Button button1;
         private Button button2;
     }

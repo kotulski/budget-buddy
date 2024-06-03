@@ -33,10 +33,10 @@
             label3 = new Label();
             Wybierz1 = new ListBox();
             label1 = new Label();
-            Wybierz2 = new ListBox();
             label4 = new Label();
             button1 = new Button();
             button2 = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // label2
@@ -57,11 +57,13 @@
             Wybierz.ForeColor = SystemColors.GrayText;
             Wybierz.FormattingEnabled = true;
             Wybierz.ItemHeight = 17;
+            Wybierz.Items.AddRange(new object[] { "Ustaw Limit", "Usuń Limit" });
             Wybierz.Location = new Point(385, 137);
             Wybierz.Margin = new Padding(0);
             Wybierz.Name = "Wybierz";
             Wybierz.Size = new Size(175, 21);
             Wybierz.TabIndex = 14;
+            Wybierz.SelectedIndexChanged += Wybierz_SelectedIndexChanged;
             // 
             // label3
             // 
@@ -80,6 +82,7 @@
             Wybierz1.ForeColor = SystemColors.GrayText;
             Wybierz1.FormattingEnabled = true;
             Wybierz1.ItemHeight = 17;
+            Wybierz1.Items.AddRange(new object[] { "Dzień", "Tydzień", "Miesiąc", "Rok" });
             Wybierz1.Location = new Point(385, 192);
             Wybierz1.Margin = new Padding(0);
             Wybierz1.Name = "Wybierz1";
@@ -97,18 +100,6 @@
             label1.TabIndex = 15;
             label1.Text = "Jaki okres:";
             // 
-            // Wybierz2
-            // 
-            Wybierz2.Font = new Font("Segoe UI", 10F);
-            Wybierz2.ForeColor = SystemColors.GrayText;
-            Wybierz2.FormattingEnabled = true;
-            Wybierz2.ItemHeight = 17;
-            Wybierz2.Location = new Point(385, 247);
-            Wybierz2.Margin = new Padding(0);
-            Wybierz2.Name = "Wybierz2";
-            Wybierz2.Size = new Size(175, 21);
-            Wybierz2.TabIndex = 18;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -116,9 +107,9 @@
             label4.ForeColor = SystemColors.InfoText;
             label4.Location = new Point(260, 247);
             label4.Name = "label4";
-            label4.Size = new Size(52, 19);
+            label4.Size = new Size(93, 19);
             label4.TabIndex = 17;
-            label4.Text = "Kwota:";
+            label4.Text = "Kwota (0,00):";
             // 
             // button1
             // 
@@ -152,15 +143,22 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(385, 243);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(175, 23);
+            textBox1.TabIndex = 21;
+            // 
             // Limity
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(Wybierz2);
             Controls.Add(label4);
             Controls.Add(Wybierz1);
             Controls.Add(label1);
@@ -180,9 +178,9 @@
         private Label label3;
         private ListBox Wybierz1;
         private Label label1;
-        private ListBox Wybierz2;
         private Label label4;
         private Button button1;
         private Button button2;
+        private TextBox textBox1;
     }
 }

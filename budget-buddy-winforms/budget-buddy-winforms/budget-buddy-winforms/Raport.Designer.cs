@@ -45,10 +45,6 @@
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label21 = new Label();
             label22 = new Label();
             label23 = new Label();
             label24 = new Label();
@@ -87,6 +83,7 @@
             Wybierz.ForeColor = SystemColors.GrayText;
             Wybierz.FormattingEnabled = true;
             Wybierz.ItemHeight = 17;
+            Wybierz.Items.AddRange(new object[] { "Dzień", "Tydzień", "Miesiąc", "Rok" });
             Wybierz.Location = new Point(352, 110);
             Wybierz.Margin = new Padding(0);
             Wybierz.Name = "Wybierz";
@@ -131,22 +128,23 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label5.ForeColor = SystemColors.InfoText;
-            label5.Location = new Point(20, 195);
+            label5.Location = new Point(61, 195);
             label5.Name = "label5";
-            label5.Size = new Size(281, 19);
+            label5.Size = new Size(205, 19);
             label5.TabIndex = 21;
-            label5.Text = "(DATA - KWOTA - KATEGORIA - NOTATKA)";
+            label5.Text = "(DATA - KWOTA - KATEGORIA)";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label6.ForeColor = SystemColors.InfoText;
-            label6.Location = new Point(531, 195);
+            label6.Location = new Point(570, 195);
             label6.Name = "label6";
-            label6.Size = new Size(192, 19);
+            label6.Size = new Size(116, 19);
             label6.TabIndex = 22;
-            label6.Text = "(DATA - KWOTA - NOTATKA)";
+            label6.Text = "(DATA - KWOTA)";
             // 
             // label7
             // 
@@ -197,7 +195,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label11.ForeColor = SystemColors.GrayText;
-            label11.Location = new Point(28, 224);
+            label11.Location = new Point(63, 224);
             label11.Name = "label11";
             label11.Size = new Size(87, 20);
             label11.TabIndex = 27;
@@ -208,7 +206,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label12.ForeColor = SystemColors.GrayText;
-            label12.Location = new Point(111, 224);
+            label12.Location = new Point(146, 224);
             label12.Name = "label12";
             label12.Size = new Size(15, 20);
             label12.TabIndex = 28;
@@ -219,7 +217,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label13.ForeColor = SystemColors.GrayText;
-            label13.Location = new Point(125, 224);
+            label13.Location = new Point(160, 224);
             label13.Name = "label13";
             label13.Size = new Size(60, 20);
             label13.TabIndex = 29;
@@ -230,7 +228,7 @@
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label14.ForeColor = SystemColors.GrayText;
-            label14.Location = new Point(182, 224);
+            label14.Location = new Point(217, 224);
             label14.Name = "label14";
             label14.Size = new Size(15, 20);
             label14.TabIndex = 30;
@@ -241,62 +239,18 @@
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label15.ForeColor = SystemColors.GrayText;
-            label15.Location = new Point(191, 224);
+            label15.Location = new Point(226, 224);
             label15.Name = "label15";
             label15.Size = new Size(39, 20);
             label15.TabIndex = 31;
             label15.Text = "Inne";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label16.ForeColor = SystemColors.GrayText;
-            label16.Location = new Point(229, 224);
-            label16.Name = "label16";
-            label16.Size = new Size(15, 20);
-            label16.TabIndex = 32;
-            label16.Text = "-";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label17.ForeColor = SystemColors.GrayText;
-            label17.Location = new Point(242, 224);
-            label17.Name = "label17";
-            label17.Size = new Size(40, 20);
-            label17.TabIndex = 33;
-            label17.Text = "Brak";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label18.ForeColor = SystemColors.GrayText;
-            label18.Location = new Point(692, 224);
-            label18.Name = "label18";
-            label18.Size = new Size(40, 20);
-            label18.TabIndex = 40;
-            label18.Text = "Brak";
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label21.ForeColor = SystemColors.GrayText;
-            label21.Location = new Point(679, 224);
-            label21.Name = "label21";
-            label21.Size = new Size(15, 20);
-            label21.TabIndex = 37;
-            label21.Text = "-";
             // 
             // label22
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label22.ForeColor = SystemColors.GrayText;
-            label22.Location = new Point(622, 224);
+            label22.Location = new Point(646, 224);
             label22.Name = "label22";
             label22.Size = new Size(60, 20);
             label22.TabIndex = 36;
@@ -307,7 +261,7 @@
             label23.AutoSize = true;
             label23.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label23.ForeColor = SystemColors.GrayText;
-            label23.Location = new Point(608, 224);
+            label23.Location = new Point(632, 224);
             label23.Name = "label23";
             label23.Size = new Size(15, 20);
             label23.TabIndex = 35;
@@ -318,7 +272,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label24.ForeColor = SystemColors.GrayText;
-            label24.Location = new Point(525, 224);
+            label24.Location = new Point(549, 224);
             label24.Name = "label24";
             label24.Size = new Size(87, 20);
             label24.TabIndex = 34;
@@ -330,13 +284,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
             ClientSize = new Size(800, 450);
-            Controls.Add(label18);
-            Controls.Add(label21);
             Controls.Add(label22);
             Controls.Add(label23);
             Controls.Add(label24);
-            Controls.Add(label17);
-            Controls.Add(label16);
             Controls.Add(label15);
             Controls.Add(label14);
             Controls.Add(label13);
@@ -379,10 +329,6 @@
         private Label label13;
         private Label label14;
         private Label label15;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private Label label21;
         private Label label22;
         private Label label23;
         private Label label24;

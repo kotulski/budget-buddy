@@ -28,5 +28,10 @@ namespace budget_buddy_winforms
             main.Show();
             this.Hide();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
