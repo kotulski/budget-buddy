@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("budget-buddy-winforms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b9041782f7075fc3032f8889cd43e1d1c8834e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65696766e9a178bf9434de514750b8fb16c8f33f")]
 [assembly: System.Reflection.AssemblyProductAttribute("budget-buddy-winforms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("budget-buddy-winforms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

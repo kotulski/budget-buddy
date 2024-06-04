@@ -63,7 +63,6 @@
             Wybierz.Name = "Wybierz";
             Wybierz.Size = new Size(175, 21);
             Wybierz.TabIndex = 14;
-            Wybierz.SelectedIndexChanged += Wybierz_SelectedIndexChanged;
             // 
             // label3
             // 

@@ -1,12 +1,12 @@
-using System.Xml.Linq;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
     public partial class Login : Form
     {
         private string name;
-
-        // Zmienna cz³onkowska do przechowywania bud¿etu
         private float budget;
 
         public Login()
@@ -19,7 +19,12 @@ namespace budget_buddy_winforms
             if (!string.IsNullOrEmpty(textBox1.Text) && (float.TryParse(textBox2.Text, out budget) || string.IsNullOrEmpty(textBox2.Text)))
             {
                 name = textBox1.Text;
-                Main main = new Main(name, budget);
+
+                // Inicjalizacja pustej listy
+                List<List<object>> emptyListOfTransactions = new List<List<object>>();
+
+                // Przekazanie pustej listy do konstruktora Main
+                Main main = new Main(name, budget, 0, 0, 0, 0, emptyListOfTransactions);
                 main.Show();
                 this.Hide();
             }

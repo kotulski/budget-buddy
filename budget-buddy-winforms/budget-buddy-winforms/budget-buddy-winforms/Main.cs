@@ -14,12 +14,22 @@ namespace budget_buddy_winforms
     {
         private string userName;
         private float userBudget;
+        private float dayLimit;
+        private float weekLimit;
+        private float monthLimit;
+        private float yearLimit;
+        private List<List<object>> listOfTransactions;
 
-        public Main(string name, float budget)
+        public Main(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
         {
             InitializeComponent();
             userName = CapitalizeFirstLetter(name);  // Capitalize first letter
             userBudget = budget;
+            dayLimit = dayL;
+            weekLimit = weekL;
+            monthLimit = monthL;
+            yearLimit = yearL;
+            listOfTransactions = lOT;
 
             label3.Text = userName;
             // Format the number with two decimal places
@@ -43,28 +53,28 @@ namespace budget_buddy_winforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Wydatki wydatki = new Wydatki(userName, userBudget);
+            Wydatki wydatki = new Wydatki(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             wydatki.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Przychody przychody = new Przychody(userName, userBudget);
+            Przychody przychody = new Przychody(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             przychody.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Limity limity = new Limity(userName, userBudget);
+            Limity limity = new Limity(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             limity.Show();
             this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Raport raport = new Raport(userName, userBudget);
+            Raport raport = new Raport(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             raport.Show();
             this.Hide();
         }
