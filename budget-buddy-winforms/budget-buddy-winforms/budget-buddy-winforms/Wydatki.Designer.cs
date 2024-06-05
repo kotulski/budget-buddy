@@ -105,7 +105,7 @@
             Wybierz.ForeColor = SystemColors.GrayText;
             Wybierz.FormattingEnabled = true;
             Wybierz.ItemHeight = 17;
-            Wybierz.Items.AddRange(new object[] { "Inne", "Żywność", "Mieszkania", "Transport", "Rozrywka", "Opieka Medyczna", "Chemia", "Edukacja" });
+            Wybierz.Items.AddRange(new object[] { "Inne", "Żywność", "Mieszkanie", "Transport", "Rozrywka", "Opieka Medyczna", "Chemia", "Edukacja" });
             Wybierz.Location = new Point(360, 241);
             Wybierz.Margin = new Padding(0);
             Wybierz.Name = "Wybierz";

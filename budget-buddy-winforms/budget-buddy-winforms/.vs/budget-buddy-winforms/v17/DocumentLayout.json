@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,14 +39,6 @@
       "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\limity.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -31,24 +47,8 @@
       "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\raport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\raport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\raport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|solutionrelative:budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy-winforms.csproj|c:\\users\\filip\\desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\limityklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,24 +66,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Limity.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Limity.Designer.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Limity.Designer.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Limity.Designer.cs",
-              "RelativeToolTip": "budget-buddy-winforms\\Limity.Designer.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAADgvzsAAABNAAAA",
+              "DocumentIndex": 1,
+              "Title": "Wydatki.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\Wydatki.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs",
+              "RelativeToolTip": "budget-buddy-winforms\\Wydatki.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwDoAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:52:30.207Z",
+              "WhenOpened": "2024-06-05T15:55:38.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Wydatki.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\Wydatki.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs [Projekt]",
+              "RelativeToolTip": "budget-buddy-winforms\\Wydatki.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:55:37.477Z",
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Limity.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Limity.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Limity.cs",
@@ -96,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Raport.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Raport.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Raport.cs",
@@ -107,18 +119,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Main.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Main.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Main.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Main.cs [Projekt]",
               "RelativeToolTip": "budget-buddy-winforms\\Main.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T17:19:46.714Z"
+              "WhenOpened": "2024-06-02T17:19:46.714Z",
+              "EditorCaption": " [Projekt]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Login.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Login.cs",
@@ -131,44 +144,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Main.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Main.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Main.cs",
               "RelativeToolTip": "budget-buddy-winforms\\Main.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAwBYAAAB5AAAA",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAwHMAAABmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T17:57:23.086Z"
+              "WhenOpened": "2024-06-03T17:57:23.086Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Przychody.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Przychody.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Przychody.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Przychody.cs",
               "RelativeToolTip": "budget-buddy-winforms\\Przychody.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAJAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T20:12:43.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Wydatki.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Wydatki.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs",
-              "RelativeToolTip": "budget-buddy-winforms\\Wydatki.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAwDYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T18:00:53.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Raport.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Raport.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Raport.cs",
@@ -180,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Przychody.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Przychody.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Przychody.cs",
@@ -191,26 +193,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Limity.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Limity.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Limity.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Limity.cs [Projekt]",
               "RelativeToolTip": "budget-buddy-winforms\\Limity.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T18:20:53.894Z",
-              "EditorCaption": " [Projekt]"
+              "WhenOpened": "2024-06-03T18:20:53.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Wydatki.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Wydatki.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Wydatki.cs [Design]",
-              "RelativeToolTip": "budget-buddy-winforms\\Wydatki.cs [Design]",
+              "DocumentIndex": 8,
+              "Title": "Limity.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Limity.Designer.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\Limity.Designer.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\Limity.Designer.cs",
+              "RelativeToolTip": "budget-buddy-winforms\\Limity.Designer.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAADgvzsAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T17:26:27.355Z"
+              "WhenOpened": "2024-06-04T19:52:30.207Z"
             },
             {
               "$type": "Document",

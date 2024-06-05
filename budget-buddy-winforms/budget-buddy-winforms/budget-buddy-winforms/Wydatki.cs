@@ -56,7 +56,7 @@ namespace budget_buddy_winforms
                 userBudget -= expense;
                 category = Wybierz.Text;
                 date = DateTime.Now.ToString("dd/MM/yyyy");
-                List<object> transaction = new List<object> { "Wydatek", expense, category, date };
+                List<object> transaction = new List<object> { "Wydatek", expense, date, category };
                 listOfTransactions.Add(transaction);
                 limitCheck();
                 Main main = new Main(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
@@ -105,7 +105,7 @@ namespace budget_buddy_winforms
 
             foreach (var transaction in listOfTransactions)
             {
-                DateTime transactionDate = DateTime.Parse(transaction[3].ToString()).Date;
+                DateTime transactionDate = DateTime.Parse(transaction[2].ToString()).Date;
                 float amount = float.Parse(transaction[1].ToString());
 
                 // Sprawdzamy, czy transakcja mieści się w danym okresie

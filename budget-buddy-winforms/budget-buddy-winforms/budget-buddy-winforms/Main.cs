@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace budget_buddy_winforms
 {
@@ -74,14 +75,52 @@ namespace budget_buddy_winforms
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Raport raport = new Raport(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
-            raport.Show();
-            this.Hide();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text file (*.txt)|*.txt";
+            saveFileDialog.DefaultExt = ".txt";
+            saveFileDialog.FileName = "raport.txt";
+
+            // Pokaż dialog zapisywania pliku
+            DialogResult result = saveFileDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                // Ścieżka wybrana przez użytkownika
+                string filePath = saveFileDialog.FileName;
+
+                string fileContent = "Raport z wydatków i przychodów:\n\n";
+
+                for (int i = 0; i < listOfTransactions.Count; i++)
+                {
+                    if (listOfTransactions[i][0].ToString() == "Wydatek")
+                    {
+                        fileContent += $"Wydatek: {listOfTransactions[i][1]} zł - {listOfTransactions[i][2]} - {listOfTransactions[i][3]}\n----------------------------------------\n";
+                    }
+                    else
+                    {
+                        fileContent += $"Przychód: {listOfTransactions[i][1]} zł - {listOfTransactions[i][2]}\n----------------------------------------\n";
+                    }
+                }
+
+                try
+                {
+                    // Zapisz plik na dysku użytkownika
+                    File.WriteAllText(filePath, fileContent);
+
+                    // Pokaż komunikat informujący o udanym zapisie
+                    MessageBox.Show($"Plik został zapisany jako {filePath}", "Sukces");
+                }
+                catch (Exception ex)
+                {
+                    // W przypadku błędu pokaż komunikat z błędem
+                    MessageBox.Show($"Wystąpił błąd podczas zapisywania pliku: {ex.Message}", "Błąd");
+                }
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private string CapitalizeFirstLetter(string input)
