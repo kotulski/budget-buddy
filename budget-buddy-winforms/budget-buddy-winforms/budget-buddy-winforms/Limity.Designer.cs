@@ -87,6 +87,7 @@
             Wybierz1.Name = "Wybierz1";
             Wybierz1.Size = new Size(175, 21);
             Wybierz1.TabIndex = 16;
+            Wybierz1.SelectedIndexChanged += Wybierz1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -148,6 +149,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(175, 23);
             textBox1.TabIndex = 21;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Limity
             // 

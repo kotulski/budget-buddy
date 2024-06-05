@@ -1,21 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace budget_buddy_winforms
 {
     public partial class Wydatki : Form
     {
-
         private float userBudget;
         private string userName;
         private float dayLimit;
@@ -41,17 +31,21 @@ namespace budget_buddy_winforms
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            expense = float.Parse(textBox1.Text);
+            if (!float.TryParse(textBox1.Text, out expense) || expense < 0)
+            {
+                MessageBox.Show("Proszę wpisać prawidłową dodatnią kwotę lub 0.");
+                expense = 0;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            // Nie zmienione
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (float.TryParse(textBox1.Text, out expense))
+            if (float.TryParse(textBox1.Text, out expense) && expense >= 0)
             {
                 userBudget -= expense;
                 category = Wybierz.Text;
@@ -65,7 +59,7 @@ namespace budget_buddy_winforms
             }
             else
             {
-                MessageBox.Show("Upewnij się, że wpisałeś prawidłową kwotę.");
+                MessageBox.Show("Upewnij się, że wpisałeś prawidłową dodatnią kwotę lub 0.");
             }
         }
 
@@ -78,12 +72,12 @@ namespace budget_buddy_winforms
 
         private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // Nie zmienione
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            // Nie zmienione
         }
 
         private void limitCheck()
@@ -91,13 +85,11 @@ namespace budget_buddy_winforms
             float periodExpense = 0;
             DateTime today = DateTime.Today;
 
-            // Obliczamy początki i końce okresów dla różnych limitów
             DateTime startOfDay = today.Date;
             DateTime startOfWeek = today.AddDays(-(int)today.DayOfWeek);
             DateTime startOfMonth = new DateTime(today.Year, today.Month, 1);
             DateTime startOfYear = new DateTime(today.Year, 1, 1);
 
-            // Obliczamy końce okresów dla różnych limitów
             DateTime endOfDay = startOfDay.AddDays(1).AddSeconds(-1);
             DateTime endOfWeek = startOfWeek.AddDays(7).AddSeconds(-1);
             DateTime endOfMonth = startOfMonth.AddMonths(1).AddSeconds(-1);
@@ -108,34 +100,31 @@ namespace budget_buddy_winforms
                 DateTime transactionDate = DateTime.Parse(transaction[2].ToString()).Date;
                 float amount = float.Parse(transaction[1].ToString());
 
-                // Sprawdzamy, czy transakcja mieści się w danym okresie
-                if ((dayLimit != 0 && transactionDate >= startOfDay && transactionDate <= endOfDay) ||
-                    (weekLimit != 0 && transactionDate >= startOfWeek && transactionDate <= endOfWeek) ||
-                    (monthLimit != 0 && transactionDate >= startOfMonth && transactionDate <= endOfMonth) ||
-                    (yearLimit != 0 && transactionDate >= startOfYear && transactionDate <= endOfYear))
+                if ((transactionDate >= startOfDay && transactionDate <= endOfDay) ||
+                    (transactionDate >= startOfWeek && transactionDate <= endOfWeek) ||
+                    (transactionDate >= startOfMonth && transactionDate <= endOfMonth) ||
+                    (transactionDate >= startOfYear && transactionDate <= endOfYear))
                 {
                     periodExpense += amount;
                 }
             }
 
-            // Sprawdzamy przekroczenie limitu dla odpowiedniego okresu
-            if (dayLimit != 0 && dayLimit < periodExpense)
+            if (dayLimit != -1 && dayLimit < periodExpense)
             {
-                MessageBox.Show("Przekroczono dzienny limit!");
+                MessageBox.Show("Przekroczono dzienny limit wynoszący " + dayLimit + " zł.");
             }
-            else if (weekLimit != 0 && weekLimit < periodExpense)
+            else if (weekLimit != -1 && weekLimit < periodExpense)
             {
-                MessageBox.Show("Przekroczono tygodniowy limit!");
+                MessageBox.Show("Przekroczono tygodniowy limit wynoszący " + weekLimit + " zł.");
             }
-            else if (monthLimit != 0 && monthLimit < periodExpense)
+            else if (monthLimit != -1 && monthLimit < periodExpense)
             {
-                MessageBox.Show("Przekroczono miesięczny limit!");
+                MessageBox.Show("Przekroczono miesięczny limit wynoszący " + monthLimit + " zł.");
             }
-            else if (yearLimit != 0 && yearLimit < periodExpense)
+            else if (yearLimit != -1 && yearLimit < periodExpense)
             {
-                MessageBox.Show("Przekroczono roczny limit!");
+                MessageBox.Show("Przekroczono roczny limit wynoszący " + yearLimit + " zł.");
             }
         }
-
     }
 }

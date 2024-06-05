@@ -16,7 +16,8 @@ namespace budget_buddy_winforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox1.Text) && (float.TryParse(textBox2.Text, out budget) || string.IsNullOrEmpty(textBox2.Text)))
+            if (!string.IsNullOrEmpty(textBox1.Text) &&
+                (float.TryParse(textBox2.Text, out budget) && budget >= 0 || string.IsNullOrEmpty(textBox2.Text)))
             {
                 name = textBox1.Text;
 
@@ -24,7 +25,7 @@ namespace budget_buddy_winforms
                 List<List<object>> emptyListOfTransactions = new List<List<object>>();
 
                 // Przekazanie pustej listy do konstruktora Main
-                Main main = new Main(name, budget, 0, 0, 0, 0, emptyListOfTransactions);
+                Main main = new Main(name, budget, -1, -1, -1, -1, emptyListOfTransactions);
                 main.Show();
                 this.Hide();
             }
@@ -43,11 +44,21 @@ namespace budget_buddy_winforms
         {
             if (float.TryParse(textBox2.Text, out budget))
             {
+                if (budget < 0)
+                {
+                    MessageBox.Show("Bud¿et musi byæ liczb¹ dodatni¹ lub równ¹ zero.");
+                    textBox2.Text = "";
+                    budget = 0;
+                }
                 // Bud¿et jest poprawn¹ liczb¹ zmiennoprzecinkow¹ i jest przechowywany w zmiennej cz³onkowskiej
+            }
+            else if (string.IsNullOrEmpty(textBox2.Text))
+            {
+                budget = 0; // Wartoœæ domyœlna, gdy pole jest puste
             }
             else
             {
-                budget = 0; // Wartoœæ domyœlna, gdy tekst nie jest liczb¹
+                MessageBox.Show("Upewnij siê, ¿e wpisa³eœ swoje imiê i poda³eœ prawid³ow¹ kwotê.");
             }
         }
     }

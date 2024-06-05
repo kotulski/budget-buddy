@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace budget_buddy_winforms
@@ -46,6 +40,18 @@ namespace budget_buddy_winforms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(Wybierz.Text))
+            {
+                MessageBox.Show("Proszę wybrać akcję.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(Wybierz1.Text))
+            {
+                MessageBox.Show("Proszę wybrać okres.");
+                return;
+            }
+
             if (Wybierz.Text == "Usuń Limit")
             {
                 switch (Wybierz1.Text)
@@ -66,19 +72,25 @@ namespace budget_buddy_winforms
             }
             else
             {
+                if (string.IsNullOrEmpty(textBox1.Text) || !float.TryParse(textBox1.Text, out float limit) || limit < 0)
+                {
+                    MessageBox.Show("Proszę wpisać prawidłową wartość większą lub równą zero dla limitu.");
+                    return;
+                }
+
                 switch (Wybierz1.Text)
                 {
                     case "Dzień":
-                        DayLimit = float.Parse(textBox1.Text);
+                        DayLimit = limit;
                         break;
                     case "Tydzień":
-                        WeekLimit = float.Parse(textBox1.Text);
+                        WeekLimit = limit;
                         break;
                     case "Miesiąc":
-                        MonthLimit = float.Parse(textBox1.Text);
+                        MonthLimit = limit;
                         break;
                     case "Rok":
-                        YearLimit = float.Parse(textBox1.Text);
+                        YearLimit = limit;
                         break;
                 }
             }
@@ -97,6 +109,16 @@ namespace budget_buddy_winforms
         }
 
         private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wybierz1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
