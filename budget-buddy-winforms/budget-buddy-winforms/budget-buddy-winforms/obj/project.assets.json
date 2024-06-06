@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\filip\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Patryk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms.csproj",
+      "projectUniqueName": "C:\\Users\\Patryk\\Desktop\\budget-buddy-main\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms.csproj",
       "projectName": "budget-buddy-winforms",
-      "projectPath": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms.csproj",
-      "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\filip\\Desktop\\budget-buddy\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\obj\\",
+      "projectPath": "C:\\Users\\Patryk\\Desktop\\budget-buddy-main\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms.csproj",
+      "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Patryk\\Desktop\\budget-buddy-main\\budget-buddy-winforms\\budget-buddy-winforms\\budget-buddy-winforms\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Patryk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

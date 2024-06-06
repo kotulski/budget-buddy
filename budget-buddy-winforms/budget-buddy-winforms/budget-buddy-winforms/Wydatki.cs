@@ -40,7 +40,6 @@ namespace budget_buddy_winforms
 
         private void label2_Click(object sender, EventArgs e)
         {
-            // Nie zmienione
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,12 +71,10 @@ namespace budget_buddy_winforms
 
         private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Nie zmienione
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            // Nie zmienione
         }
 
         private void limitCheck()

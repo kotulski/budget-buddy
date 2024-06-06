@@ -10,7 +10,6 @@ namespace budget_buddy_winforms
         private string userName;
         private List<List<object>> listOfTransactions;
 
-        // Deklarujesz właściwości do przechowywania limitów
         public float DayLimit { get; private set; }
         public float WeekLimit { get; private set; }
         public float MonthLimit { get; private set; }
@@ -30,12 +29,10 @@ namespace budget_buddy_winforms
 
         private void label2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Limity_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -110,17 +107,14 @@ namespace budget_buddy_winforms
 
         private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void Wybierz1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

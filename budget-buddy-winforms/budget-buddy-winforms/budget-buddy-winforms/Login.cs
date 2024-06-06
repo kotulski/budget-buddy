@@ -21,10 +21,8 @@ namespace budget_buddy_winforms
             {
                 name = textBox1.Text;
 
-                // Inicjalizacja pustej listy
                 List<List<object>> emptyListOfTransactions = new List<List<object>>();
 
-                // Przekazanie pustej listy do konstruktora Main
                 Main main = new Main(name, budget, -1, -1, -1, -1, emptyListOfTransactions);
                 main.Show();
                 this.Hide();
@@ -50,11 +48,10 @@ namespace budget_buddy_winforms
                     textBox2.Text = "";
                     budget = 0;
                 }
-                // Bud¿et jest poprawn¹ liczb¹ zmiennoprzecinkow¹ i jest przechowywany w zmiennej cz³onkowskiej
             }
             else if (string.IsNullOrEmpty(textBox2.Text))
             {
-                budget = 0; // Wartoœæ domyœlna, gdy pole jest puste
+                budget = 0;
             }
             else
             {

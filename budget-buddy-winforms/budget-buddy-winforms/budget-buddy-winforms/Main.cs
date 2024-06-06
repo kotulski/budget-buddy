@@ -24,7 +24,7 @@ namespace budget_buddy_winforms
         public Main(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
         {
             InitializeComponent();
-            userName = CapitalizeFirstLetter(name);  // Capitalize first letter
+            userName = CapitalizeFirstLetter(name);
             userBudget = budget;
             dayLimit = dayL;
             weekLimit = weekL;
@@ -33,7 +33,6 @@ namespace budget_buddy_winforms
             listOfTransactions = lOT;
 
             label3.Text = userName;
-            // Format the number with two decimal places
             label4.Text = $"{userBudget:0.00} zł";
         }
 
@@ -80,12 +79,10 @@ namespace budget_buddy_winforms
             saveFileDialog.DefaultExt = ".txt";
             saveFileDialog.FileName = "raport.txt";
 
-            // Pokaż dialog zapisywania pliku
             DialogResult result = saveFileDialog.ShowDialog();
 
             if (result == DialogResult.OK)
             {
-                // Ścieżka wybrana przez użytkownika
                 string filePath = saveFileDialog.FileName;
 
                 string fileContent = "Raport z wydatków i przychodów:\n\n";
@@ -104,15 +101,12 @@ namespace budget_buddy_winforms
 
                 try
                 {
-                    // Zapisz plik na dysku użytkownika
                     File.WriteAllText(filePath, fileContent);
 
-                    // Pokaż komunikat informujący o udanym zapisie
                     MessageBox.Show($"Plik został zapisany jako {filePath}", "Sukces");
                 }
                 catch (Exception ex)
                 {
-                    // W przypadku błędu pokaż komunikat z błędem
                     MessageBox.Show($"Wystąpił błąd podczas zapisywania pliku: {ex.Message}", "Błąd");
                 }
             }
