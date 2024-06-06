@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = budget_buddy_winforms
-build_property.ProjectDir = C:\Users\filip\Desktop\budget-buddy\budget-buddy-winforms\budget-buddy-winforms\
+build_property.ProjectDir = C:\Users\Patryk\Desktop\budget-buddy-main\Budget-Buddy-logic\budget-buddy-winforms\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
