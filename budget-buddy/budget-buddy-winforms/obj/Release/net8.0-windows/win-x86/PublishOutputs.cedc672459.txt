@@ -1,0 +1,7 @@
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\budget-buddy-winforms\budget-buddy.pdb
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\budget-buddy-winforms\D3DCompiler_47_cor3.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\budget-buddy-winforms\PenImc_cor3.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\budget-buddy-winforms\PresentationNative_cor3.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\budget-buddy-winforms\vcruntime140_cor3.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\budget-buddy-winforms\wpfgfx_cor3.dll
+C:\Users\filip\OneDrive\Pulpit\budget-buddy\budget-buddy-winforms\budget-buddy.exe
