@@ -47,7 +47,6 @@
             label2.Size = new Size(135, 25);
             label2.TabIndex = 4;
             label2.Text = "Dodaj wydatek";
-            label2.Click += label2_Click;
             // 
             // button1
             // 
@@ -75,7 +74,6 @@
             label1.Size = new Size(93, 19);
             label1.TabIndex = 6;
             label1.Text = "Kwota (0,00):";
-            label1.Click += label1_Click;
             // 
             // label3
             // 
@@ -111,7 +109,6 @@
             Wybierz.Name = "Wybierz";
             Wybierz.Size = new Size(175, 21);
             Wybierz.TabIndex = 12;
-            Wybierz.SelectedIndexChanged += Wybierz_SelectedIndexChanged;
             // 
             // button2
             // 

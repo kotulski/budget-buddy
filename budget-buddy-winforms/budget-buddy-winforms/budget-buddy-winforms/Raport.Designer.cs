@@ -133,7 +133,6 @@
             label5.Size = new Size(205, 19);
             label5.TabIndex = 21;
             label5.Text = "(DATA - KWOTA - KATEGORIA)";
-            label5.Click += label5_Click;
             // 
             // label6
             // 

@@ -49,7 +49,6 @@
             label2.Size = new Size(162, 25);
             label2.TabIndex = 7;
             label2.Text = "Zarządzaj limitami";
-            label2.Click += label2_Click;
             // 
             // Wybierz
             // 
@@ -87,7 +86,6 @@
             Wybierz1.Name = "Wybierz1";
             Wybierz1.Size = new Size(175, 21);
             Wybierz1.TabIndex = 16;
-            Wybierz1.SelectedIndexChanged += Wybierz1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -149,7 +147,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(175, 23);
             textBox1.TabIndex = 21;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Limity
             // 
@@ -168,7 +165,6 @@
             Controls.Add(label2);
             Name = "Limity";
             Text = "Limity";
-            Load += Limity_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -38,12 +38,16 @@ namespace budget_buddy_winforms
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(Wybierz.Text))
+            {
+                MessageBox.Show("Proszę wybrać kategorię.");
+                return;
+            }
+
             if (float.TryParse(textBox1.Text, out expense) && expense >= 0)
             {
                 userBudget -= expense;
@@ -69,13 +73,7 @@ namespace budget_buddy_winforms
             this.Hide();
         }
 
-        private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
+        
 
         private void limitCheck()
         {

@@ -27,13 +27,7 @@ namespace budget_buddy_winforms
             listOfTransactions = lOT;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Limity_Load(object sender, EventArgs e)
-        {
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,16 +48,16 @@ namespace budget_buddy_winforms
                 switch (Wybierz1.Text)
                 {
                     case "Dzień":
-                        DayLimit = 0;
+                        DayLimit = -1; // -1 indicates no limit
                         break;
                     case "Tydzień":
-                        WeekLimit = 0;
+                        WeekLimit = -1; // -1 indicates no limit
                         break;
                     case "Miesiąc":
-                        MonthLimit = 0;
+                        MonthLimit = -1; // -1 indicates no limit
                         break;
                     case "Rok":
-                        YearLimit = 0;
+                        YearLimit = -1; // -1 indicates no limit
                         break;
                 }
             }
@@ -105,16 +99,5 @@ namespace budget_buddy_winforms
             this.Hide();
         }
 
-        private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void Wybierz1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
     }
 }

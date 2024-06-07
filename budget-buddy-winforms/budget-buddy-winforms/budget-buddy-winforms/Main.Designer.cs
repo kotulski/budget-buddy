@@ -49,7 +49,6 @@
             label1.Size = new Size(57, 25);
             label1.TabIndex = 2;
             label1.Text = "Witaj";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -61,7 +60,6 @@
             label2.Size = new Size(256, 25);
             label2.TabIndex = 3;
             label2.Text = "Twój aktualny budżet wynosi:";
-            label2.Click += label2_Click;
             // 
             // label4
             // 
@@ -84,7 +82,6 @@
             label3.Size = new Size(55, 25);
             label3.TabIndex = 6;
             label3.Text = "imię!";
-            label3.Click += label3_Click;
             // 
             // button1
             // 
