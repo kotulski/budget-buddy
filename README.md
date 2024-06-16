@@ -1,22 +1,26 @@
 # budget-buddy
-Budget Buddy to prosta aplikacja WinForms, która umożliwia zarządzanie własnym budżetem.
+Budget Buddy to prosta aplikacja napisana w języku C#, która umożliwia zarządzanie własnym budżetem.
 ## Funkcje
-- **Dodawanie Wydatków i Przychodów:** Łatwo rejestruj swoje wydatki i przychody, aby śledzić swoje działania finansowe.
-- **Zarządzanie Limitami Wydatków:** Ustalaj i zarządzaj limitami wydatków, aby upewnić się, że trzymasz się swojego budżetu.
-- **Generowanie Raportów Finansowych:** Twórz szczegółowe raporty finansowe, aby analizować swoje wzorce wydatków i przychodów na przestrzeni czasu.
+- **Dodawanie wydatków i przychodów**
+- **Zarządzanie limitami wydatków**
+- **Generowanie raportów finansowych**
 ## Wymagania
 - .NET 6.0 lub nowszy
 - Visual Studio 2022 lub nowszy
 ## Instalacja
-Pierwsza możliwość:
+<b> Pierwsza możliwość: </b>
 - Sklonuj repozytorium: 
 ```git clone https://github.com/kotulski/budget-buddy.git```
-- Otwórz plik rozwiązania (‘bugdet-buddy.sln’) w programie Visual Studio i uruchom program.
-Druga możliwość:
-- W repozytorium na GitHubie, w Releases, pobieramy Budget-Buddy1.0.zip z Assets.
-- Rozpakowujemy plik .zip i uruchamiamy program Budget Buddy.
-## Użytkowanie
+- Otwórz plik rozwiązania (‘bugdet-buddy.sln’) w programie Visual Studio i uruchom aplikację.
 
+<b> Druga możliwość: </b>
+- W repozytorium na GitHubie, w Releases, pobieramy Budget-Buddy1.0.zip z Assets.
+- Rozpakowujemy plik .zip i uruchamiamy aplikację Budget Buddy.
+## Użytkowanie
+1. Wpisz swoje dane (imię oraz aktualny budżet) aby móc korzystać z możliwości aplikacji.
+2. Rejestruj swoje wydatki oraz przychody.
+3. Zarządzaj limitami wydatków.
+4. Generuj raport, aby mieć w jednej formie informacje dotyczące zarządzania swoim budżetem.
 ## Licencja
 Ten projekt jest licencjonowany na warunkach licencji MIT. Zobacz plik [LICENSE](https://github.com/kotulski/budget-buddy/blob/main/LICENSE) aby zapoznać się ze szczegółami.
 
