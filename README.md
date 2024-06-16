@@ -8,10 +8,15 @@ Budget Buddy to prosta aplikacja WinForms, która umożliwia zarządzanie własn
 - .NET 6.0 lub nowszy
 - Visual Studio 2022 lub nowszy
 ## Instalacja
-Sklonuj repozytorium: 
+Pierwsza możliwość:
+- Sklonuj repozytorium: 
 ```git clone https://github.com/kotulski/budget-buddy.git```
+- Otwórz plik rozwiązania (‘bugdet-buddy.sln’) w programie Visual Studio i uruchom program.
+Druga możliwość:
+- W repozytorium na GitHubie, w Releases, pobieramy Budget-Buddy1.0.zip z Assets.
+- Rozpakowujemy plik .zip i uruchamiamy program Budget Buddy.
 ## Użytkowanie
- Otwórz plik rozwiązania (‘bugdet-buddy.sln’) w programie Visual Studio.
+
 ## Licencja
 Ten projekt jest licencjonowany na warunkach licencji MIT. Zobacz plik [LICENSE](https://github.com/kotulski/budget-buddy/blob/main/LICENSE) aby zapoznać się ze szczegółami.
 
