@@ -30,9 +30,9 @@ namespace budget_buddy_winforms
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (!float.TryParse(textBox1.Text, out income) || income < 0)
+            if (!float.TryParse(textBox1.Text, out income) || income < 0.01)
             {
-                MessageBox.Show("Proszę wpisać prawidłową dodatnią kwotę lub 0.");
+                MessageBox.Show("Proszę wpisać prawidłową dodatnią kwotę.");
                 income = 0;
             }
         }
@@ -51,7 +51,7 @@ namespace budget_buddy_winforms
             }
             else
             {
-                MessageBox.Show("Upewnij się, że wpisałeś prawidłową dodatnią kwotę lub 0.");
+                MessageBox.Show("Upewnij się, że wpisałeś prawidłową dodatnią kwotę.");
             }
         }
 
