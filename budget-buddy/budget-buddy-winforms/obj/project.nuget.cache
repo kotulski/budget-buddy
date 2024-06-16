@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3M1x6872+uI3bh1yPqEaiXwXnMV76P+j3wOMiAuafsfcGYuZBaLwyesoLydjxG2Zp9oSj+aHSqKR/vO/GWH0VA==",
+  "dgSpecHash": "Cn4zBDnN3ogA3E0wKDVUTVzLLMSLbCYusxqr5/78sKauOFNV2yx9qtYif1p3wtbiAbl8l7u3yWci5W39qnoGdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\budget-buddy.csproj",
+  "projectFilePath": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy-main\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
