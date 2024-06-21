@@ -27,72 +27,58 @@ namespace budget_buddy_winforms
             listOfTransactions = lOT;
         }
 
-        
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Wybierz.Text))
+            if (string.IsNullOrEmpty(Wybierz.Text) || string.IsNullOrEmpty(Wybierz1.Text))
             {
-                MessageBox.Show("Proszę wybrać akcję.");
-                return;
-            }
-
-            if (string.IsNullOrEmpty(Wybierz1.Text))
-            {
-                MessageBox.Show("Proszę wybrać okres.");
+                MessageBox.Show("Proszę wybrać akcję i okres.");
                 return;
             }
 
             if (Wybierz.Text == "Usuń Limit")
             {
-                switch (Wybierz1.Text)
-                {
-                    case "Dzień":
-                        DayLimit = -1;
-                        break;
-                    case "Tydzień":
-                        WeekLimit = -1;
-                        break;
-                    case "Miesiąc":
-                        MonthLimit = -1;
-                        break;
-                    case "Rok":
-                        YearLimit = -1;
-                        break;
-                }
+                SetLimit(Wybierz1.Text, -1);
             }
             else
             {
-                if (string.IsNullOrEmpty(textBox1.Text) || !float.TryParse(textBox1.Text, out float limit) || limit < 0)
+                if (!float.TryParse(textBox1.Text, out float limit) || limit < 0)
                 {
                     MessageBox.Show("Proszę wpisać prawidłową wartość większą lub równą zero dla limitu.");
                     return;
                 }
 
-                switch (Wybierz1.Text)
-                {
-                    case "Dzień":
-                        DayLimit = limit;
-                        break;
-                    case "Tydzień":
-                        WeekLimit = limit;
-                        break;
-                    case "Miesiąc":
-                        MonthLimit = limit;
-                        break;
-                    case "Rok":
-                        YearLimit = limit;
-                        break;
-                }
+                SetLimit(Wybierz1.Text, limit);
             }
 
-            Main main = new Main(userName, userBudget, DayLimit, WeekLimit, MonthLimit, YearLimit, listOfTransactions);
             MessageBox.Show("Zmieniono limity.");
-            main.Show();
-            this.Hide();
+            NavigateToMain();
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            NavigateToMain();
+        }
+
+        private void SetLimit(string period, float value)
+        {
+            switch (period)
+            {
+                case "Dzień":
+                    DayLimit = value;
+                    break;
+                case "Tydzień":
+                    WeekLimit = value;
+                    break;
+                case "Miesiąc":
+                    MonthLimit = value;
+                    break;
+                case "Rok":
+                    YearLimit = value;
+                    break;
+            }
+        }
+
+        private void NavigateToMain()
         {
             Main main = new Main(userName, userBudget, DayLimit, WeekLimit, MonthLimit, YearLimit, listOfTransactions);
             main.Show();

@@ -53,12 +53,9 @@ namespace budget_buddy_winforms
                 userBudget -= expense;
                 category = Wybierz.Text;
                 date = DateTime.Now.ToString("dd/MM/yyyy");
-                List<object> transaction = new List<object> { "Wydatek", expense, date, category };
-                listOfTransactions.Add(transaction);
-                limitCheck();
-                Main main = new Main(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
-                main.Show();
-                this.Hide();
+                listOfTransactions.Add(new List<object> { "Wydatek", expense, date, category });
+                LimitCheck();
+                NavigateToMain();
             }
             else
             {
@@ -68,63 +65,38 @@ namespace budget_buddy_winforms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            NavigateToMain();
+        }
+
+
+
+        private void LimitCheck()
+        {
+            var limits = new[]
+            {
+                new { Limit = dayLimit, Start = DateTime.Today.Date, End = DateTime.Today.Date.AddDays(1).AddSeconds(-1) },
+                new { Limit = weekLimit, Start = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek), End = DateTime.Today.AddDays(7-(int)DateTime.Today.DayOfWeek).AddSeconds(-1) },
+                new { Limit = monthLimit, Start = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1), End = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(1).AddSeconds(-1) },
+                new { Limit = yearLimit, Start = new DateTime(DateTime.Today.Year, 1, 1), End = new DateTime(DateTime.Today.Year, 1, 1).AddYears(1).AddSeconds(-1) }
+            };
+
+            foreach (var limit in limits)
+            {
+                if (limit.Limit != -1 && listOfTransactions
+                    .Where(t => t[0].ToString() == "Wydatek" && DateTime.Parse(t[2].ToString()).Date >= limit.Start && DateTime.Parse(t[2].ToString()).Date <= limit.End)
+                    .Sum(t => float.Parse(t[1].ToString())) > limit.Limit)
+                {
+                    MessageBox.Show($"Przekroczono limit wynoszący {limit.Limit} zł.");
+                }
+            }
+        }
+
+
+        private void NavigateToMain()
+        {
             Main main = new Main(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             main.Show();
             this.Hide();
-        }
-
-
-
-        private void limitCheck()
-        {
-            float periodExpense = 0;
-            DateTime today = DateTime.Today;
-
-            DateTime startOfDay = today.Date;
-            DateTime startOfWeek = today.AddDays(-(int)today.DayOfWeek);
-            DateTime startOfMonth = new DateTime(today.Year, today.Month, 1);
-            DateTime startOfYear = new DateTime(today.Year, 1, 1);
-
-            DateTime endOfDay = startOfDay.AddDays(1).AddSeconds(-1);
-            DateTime endOfWeek = startOfWeek.AddDays(7).AddSeconds(-1);
-            DateTime endOfMonth = startOfMonth.AddMonths(1).AddSeconds(-1);
-            DateTime endOfYear = startOfYear.AddYears(1).AddSeconds(-1);
-
-            foreach (var transaction in listOfTransactions)
-            {
-                DateTime transactionDate = DateTime.Parse(transaction[2].ToString()).Date;
-                float amount = float.Parse(transaction[1].ToString());
-
-                if ((transactionDate >= startOfDay && transactionDate <= endOfDay) ||
-                    (transactionDate >= startOfWeek && transactionDate <= endOfWeek) ||
-                    (transactionDate >= startOfMonth && transactionDate <= endOfMonth) ||
-                    (transactionDate >= startOfYear && transactionDate <= endOfYear))
-                {
-                    periodExpense += amount;
-                }
-            }
-
-            if (dayLimit != -1 && dayLimit < periodExpense)
-            {
-                MessageBox.Show("Przekroczono dzienny limit wynoszący " + dayLimit + " zł.");
-            }
-            else if (weekLimit != -1 && weekLimit < periodExpense)
-            {
-                MessageBox.Show("Przekroczono tygodniowy limit wynoszący " + weekLimit + " zł.");
-            }
-            else if (monthLimit != -1 && monthLimit < periodExpense)
-            {
-                MessageBox.Show("Przekroczono miesięczny limit wynoszący " + monthLimit + " zł.");
-            }
-            else if (yearLimit != -1 && yearLimit < periodExpense)
-            {
-                MessageBox.Show("Przekroczono roczny limit wynoszący " + yearLimit + " zł.");
-            }
-        }
-
-        private void Wybierz_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

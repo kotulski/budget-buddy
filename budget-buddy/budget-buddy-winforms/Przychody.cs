@@ -43,11 +43,8 @@ namespace budget_buddy_winforms
             {
                 userBudget += income;
                 date = DateTime.Now.ToString("dd/MM/yyyy");
-                List<object> transaction = new List<object> { "Przychód", income, date };
-                listOfTransactions.Add(transaction);
-                Main main = new Main(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
-                main.Show();
-                this.Hide();
+                listOfTransactions.Add(new List<object> { "Przychód", income, date });
+                NavigateToMain();
             }
             else
             {
@@ -56,6 +53,11 @@ namespace budget_buddy_winforms
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            NavigateToMain();
+        }
+
+        private void NavigateToMain()
         {
             Main main = new Main(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             main.Show();

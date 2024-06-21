@@ -110,7 +110,6 @@
             Wybierz.Name = "Wybierz";
             Wybierz.Size = new Size(199, 27);
             Wybierz.TabIndex = 12;
-            Wybierz.SelectedIndexChanged += Wybierz_SelectedIndexChanged;
             // 
             // button2
             // 

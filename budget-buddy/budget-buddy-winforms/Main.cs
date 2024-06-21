@@ -32,76 +32,55 @@ namespace budget_buddy_winforms
             yearLimit = yearL;
             listOfTransactions = lOT;
 
-            label3.Text = userName;
-            label4.Text = $"{userBudget:0.00} zł";
+            UpdateLabels();
         }
 
-        
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            Wydatki wydatki = new Wydatki(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
-            wydatki.Show();
-            this.Hide();
+            NavigateToForm(new Wydatki(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Przychody przychody = new Przychody(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
-            przychody.Show();
-            this.Hide();
+            NavigateToForm(new Przychody(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Limity limity = new Limity(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
-            limity.Show();
-            this.Hide();
+            NavigateToForm(new Limity(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions));
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Text file (*.txt)|*.txt";
-            saveFileDialog.DefaultExt = ".txt";
-            saveFileDialog.FileName = "raport.txt";
-
-            DialogResult result = saveFileDialog.ShowDialog();
-
-            if (result == DialogResult.OK)
+            SaveFileDialog saveFileDialog = new SaveFileDialog
             {
-                string filePath = saveFileDialog.FileName;
+                Filter = "Text file (*.txt)|*.txt",
+                DefaultExt = ".txt",
+                FileName = "raport.txt"
+            };
 
-                string fileContent = "Raport z wydatków i przychodów:\n\n";
-
-                for (int i = 0; i < listOfTransactions.Count; i++)
-                {
-                    if (listOfTransactions[i][0].ToString() == "Wydatek")
-                    {
-                        fileContent += $"Wydatek: {listOfTransactions[i][1]} zł - {listOfTransactions[i][2]} - {listOfTransactions[i][3]}\n----------------------------------------\n";
-                    }
-                    else
-                    {
-                        fileContent += $"Przychód: {listOfTransactions[i][1]} zł - {listOfTransactions[i][2]}\n----------------------------------------\n";
-                    }
-                }
-
-                try
-                {
-                    File.WriteAllText(filePath, fileContent);
-
-                    MessageBox.Show($"Plik został zapisany jako {filePath}", "Sukces");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Wystąpił błąd podczas zapisywania pliku: {ex.Message}", "Błąd");
-                }
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                SaveReport(saveFileDialog.FileName);
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void UpdateLabels()
+        {
+            label3.Text = userName;
+            label4.Text = $"{userBudget:0.00} zł";
+        }
+
+        private void NavigateToForm(Form form)
+        {
+            form.Show();
+            this.Hide();
         }
 
         private string CapitalizeFirstLetter(string input)
@@ -111,5 +90,29 @@ namespace budget_buddy_winforms
 
             return char.ToUpper(input[0]) + input.Substring(1).ToLower();
         }
+
+        private void SaveReport(string filePath)
+        {
+            string fileContent = "Raport z wydatków i przychodów:\n\n";
+
+            foreach (var transaction in listOfTransactions)
+            {
+                fileContent += transaction[0].ToString() == "Wydatek"
+                    ? $"Wydatek: {transaction[1]} zł - {transaction[2]} - {transaction[3]}\n----------------------------------------\n"
+                    : $"Przychód: {transaction[1]} zł - {transaction[2]}\n----------------------------------------\n";
+            }
+
+            try
+            {
+                File.WriteAllText(filePath, fileContent);
+                MessageBox.Show($"Plik został zapisany jako {filePath}", "Sukces");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Wystąpił błąd podczas zapisywania pliku: {ex.Message}", "Błąd");
+            }
+        }
+
+
     }
 }
