@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("budget-buddy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4972909f54f64fa2a41f3bf83db81b2771d0c20b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24820e6573d4f69c662dab651face83cc6ae57e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("budget-buddy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("budget-buddy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

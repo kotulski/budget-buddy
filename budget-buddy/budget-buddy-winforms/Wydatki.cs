@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
-    public partial class Wydatki : Form
+    public partial class Wydatki : Form, INavigation
     {
         private float userBudget;
         private string userName;
@@ -44,7 +44,7 @@ namespace budget_buddy_winforms
                 date = DateTime.Now.ToString("dd/MM/yyyy");
                 listOfTransactions.Add(new List<object> { "Wydatek", expense, date, category });
                 LimitCheck();
-                NavigateToMain();
+                NavigateToMain(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             }
             else
             {
@@ -54,7 +54,7 @@ namespace budget_buddy_winforms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NavigateToMain();
+            NavigateToMain(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
         }
 
         private void LimitCheck()
@@ -78,10 +78,10 @@ namespace budget_buddy_winforms
             }
         }
 
-
-        private void NavigateToMain()
+        public void NavigateToMain(string name, float budget, float dayLimit, float weekLimit, float monthLimit, float yearLimit, List<List<object>> listOfTransactions)
         {
-            Main main = new Main(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
+            List<List<object>> emptyListOfTransactions = new List<List<object>>();
+            Main main = new Main(name, budget, dayLimit, weekLimit, monthLimit, yearLimit, emptyListOfTransactions);
             main.Show();
             this.Hide();
         }

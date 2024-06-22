@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
-    public partial class Limity : Form
+    public partial class Limity : Form, INavigation
     {
         private float userBudget;
         private string userName;
@@ -51,12 +51,12 @@ namespace budget_buddy_winforms
             }
 
             MessageBox.Show("Zmieniono limity.");
-            NavigateToMain();
+            NavigateToMain(userName, userBudget, DayLimit, WeekLimit, MonthLimit, YearLimit, listOfTransactions);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NavigateToMain();
+            NavigateToMain(userName, userBudget, DayLimit, WeekLimit, MonthLimit, YearLimit, listOfTransactions);
         }
 
         private void SetLimit(string period, float value)
@@ -78,12 +78,11 @@ namespace budget_buddy_winforms
             }
         }
 
-        private void NavigateToMain()
+        public void NavigateToMain(string name, float budget, float dayLimit, float weekLimit, float monthLimit, float yearLimit, List<List<object>> listOfTransactions)
         {
-            Main main = new Main(userName, userBudget, DayLimit, WeekLimit, MonthLimit, YearLimit, listOfTransactions);
+            Main main = new Main(name, budget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
             main.Show();
             this.Hide();
         }
-
     }
 }
