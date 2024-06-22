@@ -96,7 +96,6 @@
             textBox1.Size = new Size(199, 30);
             textBox1.TabIndex = 9;
             textBox1.TextAlign = HorizontalAlignment.Center;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Wybierz
             // 

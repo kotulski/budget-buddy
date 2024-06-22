@@ -28,18 +28,9 @@ namespace budget_buddy_winforms
             listOfTransactions = lOT;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (!float.TryParse(textBox1.Text, out income) || income < 0.01)
-            {
-                MessageBox.Show("Proszę wpisać prawidłową dodatnią kwotę.");
-                income = 0;
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if (float.TryParse(textBox1.Text, out income) && income >= 0)
+            if (float.TryParse(textBox1.Text, out income) && income > 0.009)
             {
                 userBudget += income;
                 date = DateTime.Now.ToString("dd/MM/yyyy");

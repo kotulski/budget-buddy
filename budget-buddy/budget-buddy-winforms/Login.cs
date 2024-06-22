@@ -31,8 +31,8 @@ namespace budget_buddy_winforms
 
         private bool ValidateInput()
         {
-            return !string.IsNullOrEmpty(textBox1.Text) &&
-                   (float.TryParse(textBox2.Text, out budget) && budget >= 0 || string.IsNullOrEmpty(textBox2.Text));
+            return !string.IsNullOrEmpty(name) &&
+                   (float.TryParse(textBox2.Text, out budget) && budget > 0.009 || string.IsNullOrEmpty(textBox2.Text));
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -40,14 +40,6 @@ namespace budget_buddy_winforms
             name = textBox1.Text;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            if (!float.TryParse(textBox2.Text, out budget) || budget < 0)
-            {
-                MessageBox.Show("Bud¿et musi byæ liczb¹ dodatni¹ lub równ¹ zero.");
-                textBox2.Text = "";
-                budget = 0;
-            }
-        }
+        
     }
 }

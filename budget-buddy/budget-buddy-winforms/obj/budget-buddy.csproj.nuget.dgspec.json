@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj": {}
+    "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
         "projectName": "budget-buddy",
-        "projectPath": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
         "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\obj\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -68,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -29,17 +29,6 @@ namespace budget_buddy_winforms
             listOfTransactions = lOT;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (!float.TryParse(textBox1.Text, out expense) || expense < 0.01)
-            {
-                MessageBox.Show("Proszę wpisać prawidłową dodatnią kwotę.");
-                expense = 0;
-            }
-        }
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(Wybierz.Text))
@@ -48,7 +37,7 @@ namespace budget_buddy_winforms
                 return;
             }
 
-            if (float.TryParse(textBox1.Text, out expense) && expense >= 0)
+            if (float.TryParse(textBox1.Text, out expense) && expense > 0.009)
             {
                 userBudget -= expense;
                 category = Wybierz.Text;
@@ -67,8 +56,6 @@ namespace budget_buddy_winforms
         {
             NavigateToMain();
         }
-
-
 
         private void LimitCheck()
         {
