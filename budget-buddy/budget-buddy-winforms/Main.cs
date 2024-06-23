@@ -11,7 +11,7 @@ using System.IO;
 
 namespace budget_buddy_winforms
 {
-    public partial class Main : Form
+    public partial class Main : BaseForm
     {
         private string userName;
         private float userBudget;
@@ -22,6 +22,7 @@ namespace budget_buddy_winforms
         private List<List<object>> listOfTransactions;
 
         public Main(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
+            : base(name, budget, dayL, weekL, monthL, yearL, lOT)
         {
             InitializeComponent();
             userName = CapitalizeFirstLetter(name);
@@ -32,10 +33,18 @@ namespace budget_buddy_winforms
             yearLimit = yearL;
             listOfTransactions = lOT;
 
+            this.Shown += new EventHandler(Main_Shown);
             UpdateLabels();
         }
 
-       
+        private void Main_Shown(object sender, EventArgs e)
+        {
+            if (userBudget < 0)
+            {
+                MessageBox.Show("Uwaga! Masz dług!");
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             NavigateToForm(new Wydatki(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions));
@@ -89,6 +98,8 @@ namespace budget_buddy_winforms
                 return input;
 
             return char.ToUpper(input[0]) + input.Substring(1).ToLower();
+
+            
         }
 
         private void SaveReport(string filePath)

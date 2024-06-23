@@ -4,18 +4,19 @@ using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
-    public partial class Limity : Form, INavigation
+    public partial class Limity : BaseForm, INavigation
     {
         private float userBudget;
         private string userName;
         private List<List<object>> listOfTransactions;
 
-        public float DayLimit { get; private set; }
-        public float WeekLimit { get; private set; }
-        public float MonthLimit { get; private set; }
-        public float YearLimit { get; private set; }
+        private float DayLimit;
+        private float WeekLimit;
+        private float MonthLimit;
+        private float YearLimit;
 
         public Limity(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
+            : base(name, budget, dayL, weekL, monthL, yearL, lOT)
         {
             InitializeComponent();
             userName = name;

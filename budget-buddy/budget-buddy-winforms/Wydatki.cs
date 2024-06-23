@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
-    public partial class Wydatki : Form, INavigation
+    public partial class Wydatki : BaseForm, INavigation
     {
         private float userBudget;
         private string userName;
@@ -18,6 +18,7 @@ namespace budget_buddy_winforms
         private string date;
 
         public Wydatki(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
+            : base(name, budget, dayL, weekL, monthL, yearL, lOT)
         {
             InitializeComponent();
             userName = name;
