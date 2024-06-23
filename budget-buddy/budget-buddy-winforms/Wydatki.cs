@@ -4,15 +4,8 @@ using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
-    public partial class Wydatki : BaseForm, INavigation
+    public partial class Wydatki : BaseForm
     {
-        private float userBudget;
-        private string userName;
-        private float dayLimit;
-        private float weekLimit;
-        private float monthLimit;
-        private float yearLimit;
-        private List<List<object>> listOfTransactions;
         private float expense;
         private string category;
         private string date;
@@ -21,13 +14,6 @@ namespace budget_buddy_winforms
             : base(name, budget, dayL, weekL, monthL, yearL, lOT)
         {
             InitializeComponent();
-            userName = name;
-            userBudget = budget;
-            dayLimit = dayL;
-            weekLimit = weekL;
-            monthLimit = monthL;
-            yearLimit = yearL;
-            listOfTransactions = lOT;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,7 +31,7 @@ namespace budget_buddy_winforms
                 date = DateTime.Now.ToString("dd/MM/yyyy");
                 listOfTransactions.Add(new List<object> { "Wydatek", expense, date, category });
                 LimitCheck();
-                NavigateToMain(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
+                NavigateToMain();
             }
             else
             {
@@ -55,7 +41,7 @@ namespace budget_buddy_winforms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NavigateToMain(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
+            NavigateToMain();
         }
 
         private void LimitCheck()
@@ -77,14 +63,6 @@ namespace budget_buddy_winforms
                     MessageBox.Show($"Przekroczono limit wynoszący {limit.Limit} zł.");
                 }
             }
-        }
-
-        public void NavigateToMain(string name, float budget, float dayLimit, float weekLimit, float monthLimit, float yearLimit, List<List<object>> listOfTransactions)
-        {
-            List<List<object>> emptyListOfTransactions = new List<List<object>>();
-            Main main = new Main(name, budget, dayLimit, weekLimit, monthLimit, yearLimit, emptyListOfTransactions);
-            main.Show();
-            this.Hide();
         }
     }
 }

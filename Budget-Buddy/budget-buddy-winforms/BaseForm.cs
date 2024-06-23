@@ -39,5 +39,17 @@ namespace budget_buddy_winforms
 
             return char.ToUpper(input[0]) + input.Substring(1).ToLower();
         }
+
+        public void NavigateToForm(Form form)
+        {
+            form.Show();
+            this.Hide();
+        }
+
+        public void NavigateToMain()
+        {
+            Main main = new Main(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
+            NavigateToForm(main);
+        }
     }
 }

@@ -4,28 +4,13 @@ using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
-    public partial class Limity : BaseForm, INavigation
+    public partial class Limity : BaseForm
     {
-        private float userBudget;
-        private string userName;
-        private List<List<object>> listOfTransactions;
-
-        private float DayLimit;
-        private float WeekLimit;
-        private float MonthLimit;
-        private float YearLimit;
 
         public Limity(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
             : base(name, budget, dayL, weekL, monthL, yearL, lOT)
         {
             InitializeComponent();
-            userName = name;
-            userBudget = budget;
-            DayLimit = dayL;
-            WeekLimit = weekL;
-            MonthLimit = monthL;
-            YearLimit = yearL;
-            listOfTransactions = lOT;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,12 +37,12 @@ namespace budget_buddy_winforms
             }
 
             MessageBox.Show("Zmieniono limity.");
-            NavigateToMain(userName, userBudget, DayLimit, WeekLimit, MonthLimit, YearLimit, listOfTransactions);
+            NavigateToMain();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NavigateToMain(userName, userBudget, DayLimit, WeekLimit, MonthLimit, YearLimit, listOfTransactions);
+            NavigateToMain();
         }
 
         private void SetLimit(string period, float value)
@@ -65,25 +50,19 @@ namespace budget_buddy_winforms
             switch (period)
             {
                 case "Dzień":
-                    DayLimit = value;
+                    dayLimit = value;
                     break;
                 case "Tydzień":
-                    WeekLimit = value;
+                    weekLimit = value;
                     break;
                 case "Miesiąc":
-                    MonthLimit = value;
+                    monthLimit = value;
                     break;
                 case "Rok":
-                    YearLimit = value;
+                    yearLimit = value;
                     break;
             }
         }
 
-        public void NavigateToMain(string name, float budget, float dayLimit, float weekLimit, float monthLimit, float yearLimit, List<List<object>> listOfTransactions)
-        {
-            Main main = new Main(name, budget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
-            main.Show();
-            this.Hide();
-        }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4RKWWq2efajHmTqlM+odvcbl7F3KSF1j8Y2KxRcgGbtrmN21xePKOL1kEutahxQtE4ZCrH6Df7AhuEh9IB1PrA==",
+  "dgSpecHash": "r/TowY2G3S8u3GtgJBL9o23Xk+UhPeUdAIw/woN2nYYfu7LwhroeEMTXfTwygsCz7AUwrMGI92JiNSxKT4Gf0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\filip\\OneDrive\\Pulpit\\BB\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
+  "projectFilePath": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\budget-buddy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\filip\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.1\\microsoft.net.illink.tasks.8.0.1.nupkg.sha512",
     "C:\\Users\\filip\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.1\\microsoft.netcore.app.runtime.win-x86.8.0.1.nupkg.sha512",

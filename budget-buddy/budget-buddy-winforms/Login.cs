@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace budget_buddy_winforms
 {
-    public partial class Login : Form, INavigation
+    public partial class Login : BaseForm
     {
         private string name;
         private float budget;
@@ -18,7 +18,9 @@ namespace budget_buddy_winforms
         {
             if (ValidateInput())
             {
-                NavigateToMain(name, budget, -1, -1, -1, -1, new List<List<object>>());
+                List<List<object>> emptyListOfTransactions = new List<List<object>>();
+                Main main = new Main(name, budget, -1, -1, -1, -1, emptyListOfTransactions);
+                NavigateToForm(main);
             }
             else
             {
@@ -37,12 +39,6 @@ namespace budget_buddy_winforms
             name = textBox1.Text;
         }
 
-        public void NavigateToMain(string name, float budget, float dayLimit, float weekLimit, float monthLimit, float yearLimit, List<List<object>> listOfTransactions)
-        {
-            List<List<object>> emptyListOfTransactions = new List<List<object>>();
-            Main main = new Main(name, budget, dayLimit, weekLimit, monthLimit, yearLimit, emptyListOfTransactions);
-            main.Show();
-            this.Hide();
-        }
+        
     }
 }

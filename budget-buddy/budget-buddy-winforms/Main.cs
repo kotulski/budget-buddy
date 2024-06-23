@@ -13,26 +13,11 @@ namespace budget_buddy_winforms
 {
     public partial class Main : BaseForm
     {
-        private string userName;
-        private float userBudget;
-        private float dayLimit;
-        private float weekLimit;
-        private float monthLimit;
-        private float yearLimit;
-        private List<List<object>> listOfTransactions;
 
         public Main(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
             : base(name, budget, dayL, weekL, monthL, yearL, lOT)
         {
             InitializeComponent();
-            userName = CapitalizeFirstLetter(name);
-            userBudget = budget;
-            dayLimit = dayL;
-            weekLimit = weekL;
-            monthLimit = monthL;
-            yearLimit = yearL;
-            listOfTransactions = lOT;
-
             this.Shown += new EventHandler(Main_Shown);
             UpdateLabels();
         }
@@ -84,22 +69,6 @@ namespace budget_buddy_winforms
         {
             label3.Text = userName;
             label4.Text = $"{userBudget:0.00} zł";
-        }
-
-        private void NavigateToForm(Form form)
-        {
-            form.Show();
-            this.Hide();
-        }
-
-        private string CapitalizeFirstLetter(string input)
-        {
-            if (string.IsNullOrEmpty(input))
-                return input;
-
-            return char.ToUpper(input[0]) + input.Substring(1).ToLower();
-
-            
         }
 
         private void SaveReport(string filePath)
