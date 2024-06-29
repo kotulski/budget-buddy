@@ -1,0 +1,201 @@
+[
+  {
+    "Name": "Patryk",
+    "Budget": 9110.0,
+    "DayLimit": -1.0,
+    "WeekLimit": 200.0,
+    "MonthLimit": -1.0,
+    "YearLimit": -1.0,
+    "Transactions": [
+      [
+        "Przychód",
+        2333.0,
+        "29.06.2024"
+      ],
+      [
+        "Wydatek",
+        234.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Przychód",
+        2333.0,
+        "29.06.2024"
+      ],
+      [
+        "Przychód",
+        2333.0,
+        "29.06.2024"
+      ],
+      [
+        "Przychód",
+        6777.0,
+        "29.06.2024"
+      ]
+    ]
+  },
+  {
+    "Name": "Filip",
+    "Budget": -69395.0,
+    "DayLimit": -1.0,
+    "WeekLimit": -1.0,
+    "MonthLimit": -1.0,
+    "YearLimit": -1.0,
+    "Transactions": [
+      [
+        "Przychód",
+        2333.0,
+        "29.06.2024"
+      ],
+      [
+        "Przychód",
+        3000.0,
+        "29.06.2024"
+      ],
+      [
+        "Wydatek",
+        69.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        60000.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        60.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        1.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        600.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        2.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        6000.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        233.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Przychód",
+        2.0,
+        "29.06.2024"
+      ],
+      [
+        "Wydatek",
+        600.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Przychód",
+        67.0,
+        "29.06.2024"
+      ],
+      [
+        "Wydatek",
+        677.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        544.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Przychód",
+        2.0,
+        "29.06.2024"
+      ],
+      [
+        "Przychód",
+        2.0,
+        "29.06.2024"
+      ],
+      [
+        "Przychód",
+        2.0,
+        "29.06.2024"
+      ],
+      [
+        "Wydatek",
+        233.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Przychód",
+        2.0,
+        "29.06.2024"
+      ],
+      [
+        "Przychód",
+        2.0,
+        "29.06.2024"
+      ],
+      [
+        "Wydatek",
+        233.0,
+        "29.06.2024",
+        "Inne"
+      ],
+      [
+        "Wydatek",
+        5555.0,
+        "29.06.2024",
+        "Inne"
+      ]
+    ]
+  },
+  {
+    "Name": "Damian",
+    "Budget": 4788.0,
+    "DayLimit": -1.0,
+    "WeekLimit": -1.0,
+    "MonthLimit": -1.0,
+    "YearLimit": -1.0,
+    "Transactions": [
+      [
+        "Przychód",
+        4555.0,
+        "29.06.2024"
+      ]
+    ]
+  },
+  {
+    "Name": "Chuj",
+    "Budget": 0.0,
+    "DayLimit": -1.0,
+    "WeekLimit": -1.0,
+    "MonthLimit": -1.0,
+    "YearLimit": 23.0,
+    "Transactions": []
+  }
+]

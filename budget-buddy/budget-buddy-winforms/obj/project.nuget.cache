@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+7RP2xj39TM=",
+  "dgSpecHash": "9ShZss4/lrw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\filip\\Desktop\\naprawa\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\budget-buddy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\filip\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

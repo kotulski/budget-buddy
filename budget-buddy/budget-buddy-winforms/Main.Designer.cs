@@ -44,9 +44,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = SystemColors.InfoText;
-            label1.Location = new Point(390, 40);
+            label1.Location = new Point(341, 30);
             label1.Name = "label1";
-            label1.Size = new Size(71, 32);
+            label1.Size = new Size(57, 25);
             label1.TabIndex = 2;
             label1.Text = "Witaj";
             // 
@@ -55,9 +55,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 13F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label2.ForeColor = SystemColors.InfoText;
-            label2.Location = new Point(273, 93);
+            label2.Location = new Point(239, 70);
             label2.Name = "label2";
-            label2.Size = new Size(306, 30);
+            label2.Size = new Size(256, 25);
             label2.TabIndex = 3;
             label2.Text = "Twój aktualny budżet wynosi:";
             // 
@@ -66,9 +66,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label4.ForeColor = SystemColors.ControlText;
-            label4.Location = new Point(574, 93);
+            label4.Location = new Point(502, 70);
             label4.Name = "label4";
-            label4.Size = new Size(70, 30);
+            label4.Size = new Size(54, 23);
             label4.TabIndex = 5;
             label4.Text = "0,00zł";
             // 
@@ -77,9 +77,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point(454, 40);
+            label3.Location = new Point(397, 30);
             label3.Name = "label3";
-            label3.Size = new Size(67, 32);
+            label3.Size = new Size(55, 25);
             label3.TabIndex = 6;
             label3.Text = "imię!";
             // 
@@ -90,10 +90,9 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 10F);
             button1.ForeColor = SystemColors.Info;
-            button1.Location = new Point(354, 160);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(310, 120);
             button1.Name = "button1";
-            button1.Size = new Size(218, 60);
+            button1.Size = new Size(191, 45);
             button1.TabIndex = 7;
             button1.Text = "Dodaj wydatek";
             button1.UseVisualStyleBackColor = false;
@@ -106,10 +105,9 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 10F);
             button2.ForeColor = SystemColors.Info;
-            button2.Location = new Point(354, 240);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(310, 180);
             button2.Name = "button2";
-            button2.Size = new Size(218, 60);
+            button2.Size = new Size(191, 45);
             button2.TabIndex = 8;
             button2.Text = "Dodaj przychód";
             button2.UseVisualStyleBackColor = false;
@@ -122,10 +120,9 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 10F);
             button3.ForeColor = SystemColors.Info;
-            button3.Location = new Point(354, 320);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(310, 240);
             button3.Name = "button3";
-            button3.Size = new Size(218, 60);
+            button3.Size = new Size(191, 45);
             button3.TabIndex = 9;
             button3.Text = "Zarządzaj limitami";
             button3.UseVisualStyleBackColor = false;
@@ -138,10 +135,9 @@
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Segoe UI", 10F);
             button4.ForeColor = SystemColors.Info;
-            button4.Location = new Point(354, 400);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(310, 300);
             button4.Name = "button4";
-            button4.Size = new Size(218, 60);
+            button4.Size = new Size(191, 45);
             button4.TabIndex = 10;
             button4.Text = "Wygeneruj raport";
             button4.UseVisualStyleBackColor = false;
@@ -154,10 +150,9 @@
             button5.FlatStyle = FlatStyle.Popup;
             button5.Font = new Font("Segoe UI", 10F);
             button5.ForeColor = SystemColors.Info;
-            button5.Location = new Point(354, 480);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(310, 360);
             button5.Name = "button5";
-            button5.Size = new Size(218, 60);
+            button5.Size = new Size(191, 45);
             button5.TabIndex = 11;
             button5.Text = "Zakończ program";
             button5.UseVisualStyleBackColor = false;
@@ -165,10 +160,10 @@
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -178,7 +173,6 @@
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Main";
             Text = "Main";
             ResumeLayout(false);

@@ -3,48 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\bin\\Debug\\net8.0-windows\\userdata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:budget-buddy-winforms\\bin\\Debug\\net8.0-windows\\userdata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\limity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\przychody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|c:\\users\\filip\\desktop\\test\\budget-buddy\\budget-buddy\\budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E2F0B40-1F4F-404D-9D8D-8525B6AA2EED}|budget-buddy-winforms\\budget-buddy.csproj|solutionrelative:budget-buddy-winforms\\wydatki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,139 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Main.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs",
-              "RelativeToolTip": "budget-buddy-winforms\\Main.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAmwCcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:12:10.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Przychody.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Przychody.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Przychody.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Przychody.cs",
-              "RelativeToolTip": "budget-buddy-winforms\\Przychody.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwDUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:12:10.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Limity.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Limity.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Limity.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Limity.cs",
-              "RelativeToolTip": "budget-buddy-winforms\\Limity.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAQwDIAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:12:10.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Login.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Login.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Login.cs",
-              "RelativeToolTip": "budget-buddy-winforms\\Login.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:12:10.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Wydatki.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Wydatki.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Wydatki.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Wydatki.cs [Design]",
-              "RelativeToolTip": "budget-buddy-winforms\\Wydatki.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:12:10.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Przychody.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Przychody.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Przychody.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Przychody.cs [Projekt]",
-              "RelativeToolTip": "budget-buddy-winforms\\Przychody.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:12:11.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Main.cs",
-              "ToolTip": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-21T19:12:11.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Wydatki.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Wydatki.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Wydatki.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Wydatki.cs",
               "RelativeToolTip": "budget-buddy-winforms\\Wydatki.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAABTAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:12:11.376Z"
+              "WhenOpened": "2024-06-29T09:59:08.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BaseForm.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\BaseForm.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\BaseForm.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\BaseForm.cs",
-              "RelativeToolTip": "budget-buddy-winforms\\BaseForm.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "Przychody.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Przychody.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\Przychody.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Przychody.cs",
+              "RelativeToolTip": "budget-buddy-winforms\\Przychody.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAwwDEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T19:46:35.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-29T09:58:48.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Login.cs",
-              "RelativeDocumentMoniker": "budget-buddy-winforms\\Login.cs",
-              "ToolTip": "C:\\Users\\filip\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Login.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\OneDrive\\Pulpit\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-21T19:12:11.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "Limity.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Limity.cs",
               "RelativeDocumentMoniker": "budget-buddy-winforms\\Limity.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Limity.cs",
               "RelativeToolTip": "budget-buddy-winforms\\Limity.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-21T19:12:11.396Z"
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAwF0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T09:58:36.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Login.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\Login.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Login.cs",
+              "RelativeToolTip": "budget-buddy-winforms\\Login.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAwJUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T09:39:23.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseForm.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\BaseForm.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\BaseForm.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\BaseForm.cs",
+              "RelativeToolTip": "budget-buddy-winforms\\BaseForm.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAuwHAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T09:35:22.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\Main.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs [Design]",
+              "RelativeToolTip": "budget-buddy-winforms\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T09:27:01.506Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "userdata.json",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\bin\\Debug\\net8.0-windows\\userdata.json",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\bin\\Debug\\net8.0-windows\\userdata.json",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\bin\\Debug\\net8.0-windows\\userdata.json",
+              "RelativeToolTip": "budget-buddy-winforms\\bin\\Debug\\net8.0-windows\\userdata.json",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAAALQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-29T09:25:43.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs",
+              "RelativeDocumentMoniker": "budget-buddy-winforms\\Main.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\test\\budget-buddy\\Budget-Buddy\\budget-buddy-winforms\\Main.cs",
+              "RelativeToolTip": "budget-buddy-winforms\\Main.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAiwM8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T09:09:41.698Z",
+              "EditorCaption": ""
             }
           ]
         }

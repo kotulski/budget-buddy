@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace budget_buddy_winforms
@@ -21,7 +23,16 @@ namespace budget_buddy_winforms
             {
                 userBudget += income;
                 date = DateTime.Now.ToString("dd/MM/yyyy");
+
+                if (listOfTransactions == null)
+                {
+                    listOfTransactions = new List<List<object>>();
+                }
+
+                // Poprawiona nazwa rodzaju transakcji na "Przychód"
                 listOfTransactions.Add(new List<object> { "Przychód", income, date });
+
+                SaveUserData(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
                 NavigateToMain();
             }
             else
@@ -34,7 +45,5 @@ namespace budget_buddy_winforms
         {
             NavigateToMain();
         }
-
-        
     }
 }
