@@ -9,6 +9,8 @@ namespace budget_buddy_winforms
 {
     public partial class Main : BaseForm
     {
+        private bool warningShown;
+
         public Main(string name, float budget, float dayL, float weekL, float monthL, float yearL, List<List<object>> lOT)
             : base(name, budget, dayL, weekL, monthL, yearL, lOT)
         {
@@ -18,13 +20,25 @@ namespace budget_buddy_winforms
 
             // Subscribe to the Shown event
             this.Shown += new EventHandler(Main_Shown);
+            // Subscribe to the Activated event
+            this.Activated += new EventHandler(Main_Activated);
         }
 
         private void Main_Shown(object sender, EventArgs e)
         {
-            // Show the warning about debt after the form is fully displayed
-            if (userBudget < 0)
+            ShowDebtWarningIfNeeded();
+        }
+
+        private void Main_Activated(object sender, EventArgs e)
+        {
+            warningShown = false; // Reset the flag every time the form is activated
+        }
+
+        private void ShowDebtWarningIfNeeded()
+        {
+            if (userBudget < 0 && !warningShown)
             {
+                warningShown = true;
                 MessageBox.Show("Uwaga! Masz dług!");
             }
         }
@@ -33,6 +47,11 @@ namespace budget_buddy_winforms
         {
             userName = name;
             userBudget = budget;
+            dayLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
+            weekLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
+            monthLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
+            yearLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
+            listOfTransactions = LoadTransactions();
             UpdateLabels();
         }
 
@@ -62,7 +81,6 @@ namespace budget_buddy_winforms
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                LoadUserData();
                 SaveReport(saveFileDialog.FileName);
             }
         }
@@ -121,8 +139,6 @@ namespace budget_buddy_winforms
 
         private void SaveReport(string filePath)
         {
-            LoadUserData();
-
             string fileContent = $"Raport dla użytkownika: {userName}\n\n";
             fileContent += $"Aktualny budżet: {userBudget:0.00} zł\n\n";
             fileContent += "Limity:\n";
@@ -157,8 +173,6 @@ namespace budget_buddy_winforms
             }
         }
 
-
-
         private List<List<object>> LoadTransactions()
         {
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -178,7 +192,6 @@ namespace budget_buddy_winforms
             }
             return new List<List<object>>();
         }
-
 
         private void LoadUserData()
         {
