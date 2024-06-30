@@ -29,7 +29,6 @@ namespace budget_buddy_winforms
                     listOfTransactions = new List<List<object>>();
                 }
 
-                // Poprawiona nazwa rodzaju transakcji na "Przychód"
                 listOfTransactions.Add(new List<object> { "Przychód", income, date });
 
                 SaveUserData(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);

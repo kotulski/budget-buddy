@@ -18,9 +18,7 @@ namespace budget_buddy_winforms
             LoadUserData();
             UpdateLabels();
 
-            // Subscribe to the Shown event
             this.Shown += new EventHandler(Main_Shown);
-            // Subscribe to the Activated event
             this.Activated += new EventHandler(Main_Activated);
         }
 
@@ -31,7 +29,7 @@ namespace budget_buddy_winforms
 
         private void Main_Activated(object sender, EventArgs e)
         {
-            warningShown = false; // Reset the flag every time the form is activated
+            warningShown = false;
         }
 
         private void ShowDebtWarningIfNeeded()
@@ -47,10 +45,10 @@ namespace budget_buddy_winforms
         {
             userName = name;
             userBudget = budget;
-            dayLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
-            weekLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
-            monthLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
-            yearLimit = -1; // Ustawienie na -1, aby po wczytaniu z pliku uaktualnić wartość
+            dayLimit = -1;
+            weekLimit = -1; 
+            monthLimit = -1;
+            yearLimit = -1; 
             listOfTransactions = LoadTransactions();
             UpdateLabels();
         }

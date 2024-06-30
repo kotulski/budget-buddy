@@ -276,7 +276,6 @@ C:\Users\filip\Desktop\budget-buddy-main\Budget-Buddy\budget-buddy-winforms\obj\
 C:\Users\filip\Desktop\budget-buddy-main\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\ref\budget-buddy.dll
 C:\Users\filip\Desktop\test\budget-buddy\Budget-Buddy\budget-buddy-winforms\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\filip\Desktop\test\budget-buddy\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\budget-buddy.csproj.AssemblyReference.cache
-C:\Users\filip\Desktop\test\budget-buddy\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\budget_buddy_winforms.BaseForm.resources
 C:\Users\filip\Desktop\test\budget-buddy\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\budget-b.28F893C9.Up2Date
 C:\Users\filip\OneDrive\Pulpit\BB\Budget-Buddy\budget-buddy-winforms\bin\Debug\net8.0-windows\budget-buddy.exe
 C:\Users\filip\OneDrive\Pulpit\BB\Budget-Buddy\budget-buddy-winforms\bin\Debug\net8.0-windows\budget-buddy.deps.json
@@ -304,3 +303,5 @@ C:\Users\filip\OneDrive\Pulpit\BB\Budget-Buddy\budget-buddy-winforms\obj\Debug\n
 C:\Users\filip\OneDrive\Pulpit\BB\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\budget-buddy.pdb
 C:\Users\filip\OneDrive\Pulpit\BB\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\budget-buddy.genruntimeconfig.cache
 C:\Users\filip\OneDrive\Pulpit\BB\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\ref\budget-buddy.dll
+C:\Users\filip\Desktop\test\budget-buddy\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\BaseForm.resources
+C:\Users\filip\Desktop\test\budget-buddy\Budget-Buddy\budget-buddy-winforms\obj\Debug\net8.0-windows\budget_buddy_winforms.BaseForm.resources

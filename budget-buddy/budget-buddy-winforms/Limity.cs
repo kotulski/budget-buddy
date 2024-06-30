@@ -32,12 +32,11 @@ namespace budget_buddy_winforms
 
             if (Wybierz.Text == "Usuń Limit")
             {
-                limit = -1; // Upewnij się, że -1 jest poprawnie przypisywane
+                limit = -1; 
             }
 
             SetLimit(Wybierz1.Text, limit);
 
-            // Zapisz wszystkie limity (łącznie z tygodniowym) do pliku
             SaveUserData(userName, userBudget, dayLimit, weekLimit, monthLimit, yearLimit, listOfTransactions);
 
             MessageBox.Show("Zmieniono limity.");

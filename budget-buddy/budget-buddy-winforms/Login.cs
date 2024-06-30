@@ -129,13 +129,10 @@ namespace budget_buddy_winforms
                 string json = File.ReadAllText(filePath);
                 users = JsonConvert.DeserializeObject<List<UserData>>(json) ?? new List<UserData>();
 
-                // Przypisanie transakcji do odpowiedniego u¿ytkownika, jeœli istniej¹
                 foreach (var user in users)
                 {
-                    // Sprawdzenie, czy u¿ytkownik ma zapisane transakcje
                     if (user.Transactions != null && user.Transactions.Any())
                     {
-                        // Przyk³ad: wyœwietlenie liczby transakcji dla u¿ytkownika
                         Console.WriteLine($"Liczba transakcji dla u¿ytkownika {user.Name}: {user.Transactions.Count}");
                     }
                 }
